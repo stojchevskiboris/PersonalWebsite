@@ -1,0 +1,116 @@
+body{
+    margin:auto;
+}
+#main{
+    color: greenyellow;
+    height: 1000px;
+    background-image: url("../content/wall3.jpg");
+}
+
+.header *{
+    vertical-align: middle;
+
+}
+
+#topLinks li, #topLinks, #socialLinks, #socialLinks li{
+    display: inline-block;
+}
+#home img {
+    margin-left: 30px;
+    width: 90px;
+    margin-right: 200px;
+
+}
+.line{
+    margin-left: 28px;
+}
+#topLinks{
+    font-weight: bold;
+    font-size: 27px;
+    font-family: sans-serif;
+    margin-right: 60px;
+}
+#topLinks li a{
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+}
+#topLinks a:hover{
+    transition: .3s ease;
+    color: white;
+}
+
+#socialLinks a:hover{
+    transition: .3s ease;
+    opacity: 0.3;
+}
+#socialLinks li{
+    margin-left: 10px;
+}
+#socialLinks img{
+    width: 50px;
+}
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(360deg, #3f3f3f, #b0f0bb);
+}
+#skills{
+    margin-left: 30px;
+    border: 5px solid #9a9a9a;
+    padding: 25px 25px 25px 50px;
+    width: max-content;
+    animation: colorchange 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#skills li{
+    color: #adff2f;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+@keyframes colorchange {
+    0% {
+        background: #181818;
+    }
+    25%{
+        background: #2b2a2a;
+    }
+    50%{
+        background: #4b4a4a;
+    }
+    75%{
+        background: #3b3737;
+    }
+    100%{
+        background: #181818;
+    }
+}
+
+
+
+#skills li img{
+    max-height: 40px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+#skills li{
+    list-style-image: url('../content/b2_grey.png');
+
+}
+.m1,.m2{
+    font-size: 20px;
+}
+.m3{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer{
+    background: linear-gradient(360deg, #898989, #ffffff);    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
