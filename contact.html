@@ -2,9 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Boris Stojchevski - Contact</title>
+    <link rel="icon" type="image" href="/content/b_2.png">
+    <link rel="stylesheet" href="lib/jquery/jquery-ui.css">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/jquery/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/contact.css">
+
 </head>
 <body>
-send me email
+
+<div id="container">
+
+
+    <div class="header">
+        <span id="home"><a href="index.html">  <img id="hoverhome" src="content/b.png"></a></span>
+
+        <ul id="topLinks">
+            <li id="projects"><a href="projects.html">Projects</a></li>
+            <li class="line">|</li>
+            <li id="about"><a href="about.html">About</a></li>
+            <li class="line">|</li>
+            <li id="contact">Contact</li>
+
+        </ul>
+        <ul id="socialLinks">
+            <li id="linkedin"> <a href="https://www.linkedin.com/in/boris-stojchevski/"> <img id="hoverlinkedin" title="Connect with me on LinkedIn" src="content/linkedin.png"> </a></li>
+            <li id="github"> <a href="https://github.com/stojchevskiboris"> <img id="hovergithub" title="View project source codes on Github" src="content/github.png"></a> </li>
+            <li id="facebook"> <a href="https://www.facebook.com/boris.stojcevski.5/"> <img id="hoverfacebook" title="Add me on Facebook" src="content/facebook.png"></a> </li>
+            <li id="instagram"> <a href="https://www.instagram.com/stojcevski.b/"> <img id="hoverinstagram" title="Follow me on Instagram" src="content/instagram.png"> </a> </li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <form id="form">
+            <div class="field">
+                <label for="from_name">Email</label>
+                <input type="text" name="from_name" id="from_name">
+            </div>
+            <div class="field">
+                <label for="reply_to">Subject</label>
+                <input type="text" name="reply_to" id="reply_to">
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <!--        <input type="text" name="message" id="message">-->
+            </div>
+            <input type="submit" id="button" value="Send Email" >
+        </form>
+
+
+    </div>
+    <div class="footer">
+        Copyright &copy; <span id="timeNow"></span> Boris Stojchevski
+    </div>
+
+</div>
+
+
+
+
+
+<script src="js/contact.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript"> emailjs.init('LJG3WQMx5wIyI9UDM') </script>
 </body>
 </html>
