@@ -1,9 +1,14 @@
+/*------------TEMPLATE------------*/
 body{
     margin:auto;
+    background: #60f57a78;
+}
+#container{
+    min-width: fit-content;
 }
 #main{
     color: greenyellow;
-    height: 1000px;
+    min-height: 100vh;
     background-image: url("../content/wall3.jpg");
 }
 
@@ -15,14 +20,13 @@ body{
     display: inline-block;
 }
 #home img {
+    cursor: pointer;
     margin-left: 30px;
     width: 90px;
     margin-right: 200px;
-
 }
 .line{
     margin-left: 28px;
-    cursor: default;
 }
 #topLinks{
     font-weight: bold;
@@ -44,7 +48,6 @@ body{
     margin-left: 10px;
 }
 #socialLinks img{
-
     width: 50px;
 }
 
@@ -53,14 +56,6 @@ body{
     padding-bottom: 20px;
     background: linear-gradient(360deg, #494747, #61f77b);
 }
-
-
-#form{
-    background: #36ed1d61;
-    width: max-content;
-}
-
-
 .footer{
     background: linear-gradient(360deg, #494747, #61f77b);
     height: 40px;
@@ -68,40 +63,69 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+/*------------TEMPLATE------------*/
+#contactForm{
+    background: #00427b45;
+    display: block;
+    text-align: -webkit-center;
+    padding-left: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
 
-
-
+#form{
+    padding: 30px;
+    background: #848484d4;
+    width: max-content;
+    max-width: 600px;
+}
 
 .field {
+    display: inline-block;
+    font-family: sans-serif;
     margin-bottom: 10px;
 }
 
 .field label {
     display: block;
-    font-size: 12px;
-    color: #777;
+    font-size: 14px;
+    color: #ffffff;
 }
 
 .field input {
-    display: block;
-    min-width: 250px;
-    line-height: 1.5;
+    font-family: sans-serif;
     font-size: 14px;
+    line-height: 1.5;
+    display: inline-block;
+    min-width: 270px;
+    height: 30px;
     word-break: break-all;
+}
+#subjectField{
+    margin-left: 20px;
 }
 
 input[type="submit"] {
     display: block;
     padding: 6px 30px;
-    font-size: 14px;
-    background-color: #4460AA;
-    color: #fff;
+    font-size: 15px;
+    background-color: greenyellow;
+    color: black;
     border: none
 }
 
 #message{
-    width: 250px;
-    height: 80px;
+
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 573px;
+    min-width: 573px;
+    max-width: 573px;
+
+    height: 130px;
+    min-height: 120px;
+
 }
 
 .warning{
@@ -112,4 +136,48 @@ input[type="submit"] {
     margin-left: 20px;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+#cMe{
+
+    font-size: 25px;
+    text-align: center;
+}
+#c1{
+    font-size: 40px;
+    line-height: 20px;
+}
+#details{
+    font-family: sans-serif;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+.headline{
+    font-size: 30px;
+    font-weight: bold;
+}
+.headline img{
+    width: 35px;
+    vertical-align: middle;
+}
+.infoline{
+    font-size: 28px;
+    color: whitesmoke;
+    margin-left: 45px;
+    margin-top: -22px;
+    margin-bottom: 40px;
+}
+.infoline a{
+    color: whitesmoke;
+}
+#mapLocation{
+    display: inline-block;
+    width: 660px;
+    height: 340px;
+    background: #1c94c4;
+    margin-left: 123px;
+    margin-bottom: 40px;
 }

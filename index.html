@@ -10,19 +10,19 @@
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body onload="start()">
 <div id="container">
 
 
 <div class="header">
-    <span id="home"><img src="content/b_white.png"></span>
+    <span title="Home page" id="home"><img src="content/b_white.png"></span>
 
     <ul id="topLinks">
-        <li id="projects"><a href="projects.html">Projects</a></li>
+        <li id="projects"><a title="View my project" href="projects.html">Projects</a></li>
         <li class="line">|</li>
-        <li id="about"><a href="about.html">About</a></li>
+        <li id="about"><a title="Something about me" href="about.html">About</a></li>
         <li class="line">|</li>
-        <li id="contact"><a href="contact.html">Contact</a></li>
+        <li id="contact"><a title="Let`s connect" href="contact.html">Contact</a></li>
 
     </ul>
     <ul id="socialLinks">
@@ -34,15 +34,10 @@
 </div>
 
 <div id="main">
-    <span class="m1">Hi, my name is</span><br>
-    <span class="m2">Boris Stojchevski.</span><br>
-    <span class="m3">I`m a software developer</span>
-    <div class="m4">
-        Currently I`m a student at Faculty of Computer Science and Engineering - Skopje.
-        <br>
-        <span id="intership"> I`m open to work and for intership</span>
-    </div>
-    <div class="m5">
+<br>
+<!--    ubo e da e ko vo cmd prozorec!<img src="content/cmd.png">-->
+    <p id="main1"></p>
+    <div id="m5">
         <span id="myskills">My skills:</span>
         <ul id="skills">
             <li>HTML, CSS and JavaScript <img src="content/html.png"></li>
@@ -57,10 +52,21 @@
     </div>
 
     <div id="portfolio">
-        <button onclick="location.href = 'about.html'">Check out my portfolio</button>
-        <button onclick="location.href = 'contact.html'">Contact me!</button>
-
+        <button id="aboutButton" onclick="location.href = 'about.html'">Check out my portfolio</button>
+        <button id="contactButton" onclick="location.href = 'contact.html'">Contact me!</button>
     </div>
+<br><br><br><br>
+    <p id="main2">
+        “The best programs are written so that computing machines can perform them
+        quickly and so that human beings can understand them clearly. A programmer
+        is ideally an essayist who works with traditional aesthetic and literary
+        forms as well as mathematical concepts, to communicate the way that an
+        algorithm works and to convince a reader that the results will be correct.”
+        <br>
+        <span id="author"><a href="https://www.goodreads.com/author/quotes/64941.Donald_Ervin_Knuth"> ― Donald E. Knuth, Selected Papers on Computer Science</a></span>
+    </p>
+    <br>
+
 </div>
 
 

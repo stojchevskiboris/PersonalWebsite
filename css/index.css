@@ -1,9 +1,14 @@
+/*------------TEMPLATE------------*/
 body{
     margin:auto;
+    background: #60f57a78;
+}
+#container{
+    min-width: fit-content;
 }
 #main{
     color: greenyellow;
-    height: 1000px;
+    min-height: 100vh;
     background-image: url("../content/wall3.jpg");
 }
 
@@ -15,10 +20,10 @@ body{
     display: inline-block;
 }
 #home img {
+    cursor: pointer;
     margin-left: 30px;
     width: 90px;
     margin-right: 200px;
-    cursor: pointer;
 }
 .line{
     margin-left: 28px;
@@ -43,16 +48,67 @@ body{
     margin-left: 10px;
 }
 #socialLinks img{
-
     width: 50px;
 }
 
 .header {
-
     padding-top: 20px;
     padding-bottom: 20px;
     background: linear-gradient(360deg, #494747, #61f77b);
 }
+.footer{
+    background: linear-gradient(360deg, #494747, #61f77b);
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*------------TEMPLATE------------*/
+#portfolio{
+    display: inline-block;
+    padding-left: 80px;
+}
+#portfolio button{
+
+}
+#main1{
+    vertical-align: top;
+    width: 700px;
+    max-width: -webkit-fill-available;
+    display: inline-block;
+    padding-left: 80px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+}
+#main2{
+    color: #98e097;
+    vertical-align: top;
+    max-width: 1180px;
+    display: inline-block;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: justify;
+    background: #003201;
+    width: -webkit-fill-available;
+    border: 1px solid #98e097;
+    padding: 12px;
+}
+#author a{
+    color: #e6ffe6;
+    text-decoration-style: dotted;
+}
+ #m5{
+     display: inline-block;
+     text-align: -webkit-center;
+ }
+#myskills{
+    font-size: 28px;
+}
+
 #skills{
     margin-left: 30px;
     border: 5px solid #9a9a9a;
@@ -64,8 +120,9 @@ body{
     animation-play-state: running;
 }
 #skills li{
+    text-align-last: left;
     color: #adff2f;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
 }
@@ -98,19 +155,4 @@ body{
 #skills li{
     list-style-image: url('../content/b2_grey.png');
 
-}
-.m1,.m2{
-    font-size: 20px;
-}
-.m3{
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-}
-.footer{
-    background: linear-gradient(360deg, #494747, #61f77b);
-    height: 40px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }

@@ -16,14 +16,14 @@
 
 
     <div class="header">
-        <span id="home"><a href="index.html">  <img id="hoverhome" src="content/b.png"></a></span>
+        <span title="Home page" id="home"><a href="index.html">  <img id="hoverhome" src="content/b.png"></a></span>
 
         <ul id="topLinks">
-            <li id="projects"><a href="projects.html">Projects</a></li>
+            <li id="projects"><a title="View my project" href="projects.html">Projects</a></li>
             <li class="line">|</li>
-            <li id="about"><a href="about.html">About</a></li>
+            <li id="about"><a title="Something about me" href="about.html">About</a></li>
             <li class="line">|</li>
-            <li id="contact">Contact</li>
+            <li title="Let`s connect"  id="contact">Contact</li>
 
         </ul>
         <ul id="socialLinks">
@@ -35,23 +35,61 @@
     </div>
 
     <div id="main">
+        <br>
+        <div id="contactForm">
         <form id="form">
-            <div class="field">
-                <label for="from_name">Email</label>
+            <p id="cMe">CONTACT ME</p>
+            <h3 id="c1">Let`s get in touch</h3>
+            <div class="field" id="emailField">
+                <label id="labelEmail" for="from_name">Email</label>
                 <input type="text" name="from_name" id="from_name">
             </div>
-            <div class="field">
+            <div class="field" id="subjectField">
                 <label for="reply_to">Subject</label>
                 <input type="text" name="reply_to" id="reply_to">
             </div>
-            <div class="field">
+            <div class="field" id="messageField">
                 <label for="message">Message</label>
                 <textarea name="message" id="message"></textarea>
                 <!--        <input type="text" name="message" id="message">-->
             </div>
             <input type="submit" id="button" value="Send Email" >
         </form>
+        </div>
+        <br><br>
+        <div id="details">
+            <p class="headline">
+                <img src="content/location.png">
 
+                Location
+            </p>
+            <p class="infoline">Resen, Macedonia</p>
+
+            <p class="headline">
+                <img src="content/phone.png">
+                Phone
+            </p>
+            <p class="infoline"><a id="phone" href="tel:+38975855147">+389 75 855 147</a></p>
+
+            <p class="headline">
+                <img src="content/email.png">
+
+                Email
+            </p>
+            <p class="infoline"><a id="mail"  href="mailto:stojcevskib.02@gmail.com">stojcevskib.02@gmail.com</a></p>
+        </div>
+        <div id="mapLocation">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="660" height="340" id="gmap_canvas" src="https://maps.google.com/maps?q=resen&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://fmovies-online.net"></a>
+                    <br>
+                    <style>.mapouter{position:relative;text-align:right;height:340px;width:660px;}</style>
+                    <a href="https://www.embedgooglemap.net">embed google map location</a>
+                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:340px;width:660px;}</style>
+                </div>
+            </div>
+        </div>
 
     </div>
     <div class="footer">
