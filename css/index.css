@@ -20,19 +20,21 @@ body{
     display: inline-block;
 }
 #home img {
+    vertical-align: top;
     cursor: pointer;
-    margin-left: 30px;
-    width: 90px;
+    margin-left: 45px;
     margin-right: 200px;
+    margin-bottom: 30px;
+    width: 100px;
 }
 .line{
     margin-left: 28px;
 }
 #topLinks{
     font-weight: bold;
-    font-size: 27px;
+    font-size: 31px;
     font-family: sans-serif;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 #topLinks li a{
     color: black;
@@ -45,10 +47,11 @@ body{
 }
 
 #socialLinks li{
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 #socialLinks img{
-    width: 50px;
+    width: 70px;
 }
 
 .header {
@@ -65,11 +68,27 @@ body{
 }
 /*------------TEMPLATE------------*/
 #portfolio{
-    display: inline-block;
-    padding-left: 80px;
+    margin-top: 20px;
+    display: block;
+    margin-left: 80px;
 }
 #portfolio button{
+    border: 3px solid #38753b;
+    width: 280px;
+    height: 50px;
+    font-size: 24px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background: #98e097;
+    color: #00360e;
+}
+#portfolio button:hover{
+    color: white;
+    transition: .1s ease;
 
+}
+#contactButton{
+    margin-left: 20px;
 }
 #main1{
     vertical-align: top;
@@ -82,6 +101,7 @@ body{
     font-family: "Courier New", Courier, monospace;
 }
 #main2{
+    border-radius: 10px;
     color: #98e097;
     vertical-align: top;
     max-width: 1180px;
@@ -110,11 +130,12 @@ body{
 }
 
 #skills{
+    border-radius: 10px;
     margin-left: 30px;
     border: 5px solid #9a9a9a;
     padding: 25px 25px 25px 50px;
-    width: max-content;
-    animation: colorchange 5s;
+    width: 430px;
+    animation: colorchange 4s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -129,19 +150,19 @@ body{
 
 @keyframes colorchange {
     0% {
-        background: #181818;
+        background: #373c34;
     }
     25%{
         background: #434a40;
     }
     50%{
-        background: #246d35;
+        background: #1f5c2d;
     }
     75%{
         background: #434a40;
     }
     100%{
-        background: #181818;
+        background: #373c34;
     }
 }
 

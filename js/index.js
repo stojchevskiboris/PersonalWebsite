@@ -10,7 +10,7 @@ var txt = '>\n \n \n \n Hi, \n \n \n \n \n \n my name is' +
 var speed = 60;
 function start(){
     typeWriter();
-    typeWriter2();
+    //typeWriter2();
 }
 function typeWriter() {
     if (i < txt.length) {

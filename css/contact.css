@@ -20,19 +20,21 @@ body{
     display: inline-block;
 }
 #home img {
+    vertical-align: top;
     cursor: pointer;
-    margin-left: 30px;
-    width: 90px;
+    margin-left: 45px;
     margin-right: 200px;
+    margin-bottom: 30px;
+    width: 100px;
 }
 .line{
     margin-left: 28px;
 }
 #topLinks{
     font-weight: bold;
-    font-size: 27px;
+    font-size: 31px;
     font-family: sans-serif;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 #topLinks li a{
     color: black;
@@ -45,10 +47,11 @@ body{
 }
 
 #socialLinks li{
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 #socialLinks img{
-    width: 50px;
+    width: 70px;
 }
 
 .header {
@@ -68,16 +71,16 @@ body{
     background: #00427b45;
     display: block;
     text-align: -webkit-center;
-    padding-left: 50px;
     padding-top: 35px;
     padding-bottom: 35px;
 }
 
 #form{
+    border-radius: 10px;
     padding: 30px;
     background: #848484d4;
     width: max-content;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .field {
@@ -88,42 +91,42 @@ body{
 
 .field label {
     display: block;
-    font-size: 14px;
+    font-size: 27px;
     color: #ffffff;
 }
 
 .field input {
+    border-radius: 10px;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 1.5;
     display: inline-block;
-    min-width: 270px;
-    height: 30px;
+    min-width: 330px;
+    height: 60px;
     word-break: break-all;
+    margin-bottom: 18px;
 }
 #subjectField{
     margin-left: 20px;
 }
 
 input[type="submit"] {
+    border-radius: 10px;
     display: block;
     padding: 6px 30px;
-    font-size: 15px;
+    font-size: 26px;
     background-color: greenyellow;
     color: black;
     border: none
 }
 
 #message{
-
+    border-radius: 10px;
     font-family: sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    width: 573px;
-    min-width: 573px;
-    max-width: 573px;
-
-    height: 130px;
+    font-size: 17px;
+    line-height: 1.2;
+    min-width: 694px;
+    max-width: 694px;
     min-height: 120px;
 
 }
@@ -177,7 +180,7 @@ input[type="submit"] {
     display: inline-block;
     width: 660px;
     height: 340px;
-    background: #1c94c4;
+    background: #8ab4f8;
     margin-left: 123px;
     margin-bottom: 40px;
 }
