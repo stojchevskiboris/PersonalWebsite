@@ -1,13 +1,17 @@
 var i = 0;
 var j=0;
-var txt = '>\n \n \n \n Hi, \n \n \n \n \n \n my name is' +
-    '    Boris Stojchevski. \n' +
-    '    >\n \n \n \n I`m a software developer. \n \n' +
+var txt = 'Waiting for connection \n \n \n \n \n \n .\n \n \n \n \n \n.\n \n \n \n \n \n .' +
+    '\n \n \n \n \n \n \n \n \n \n \n \nConnected;' +
+    '>\n \n \n \n Hi, \n \n \n \n \n \n my name is' +
+    '    Boris Stojchevski; \n' +
+    '    >\n \n \n \n I`m a software developer; \n \n' +
     ' \n \n' +
-    '    >\n \n \n \n Currently I`m a student at Faculty of Computer Science and Engineering - Skopje.' +
-    '    >\n \n \n \n I`m open to work and for intership :).' +
-    '    > “Learning to code is learning to create and innovate”';
-var speed = 60;
+    '    >\n \n \n \n Currently I`m a student at Faculty of Computer Science and Engineering - Skopje;' +
+    '    >\n \n \n \n I`m open to work and for intership :);' +
+    '    \n \n \n \n \n \n \n \n \n \n \n \n > “Learning to code is learning to create and innovate”';
+
+
+var speed = 50;
 function start(){
     typeWriter();
     //typeWriter2();
@@ -15,7 +19,7 @@ function start(){
 function typeWriter() {
     if (i < txt.length) {
         if(i<txt.length){
-            if (txt.charAt(i-1)=='.'){
+            if (txt.charAt(i-1)==';'){
                 document.getElementById("main1").innerHTML += "<br>";
             }
         }
@@ -79,7 +83,4 @@ $(document).ready(function () {
     $("#hoverinstagram").on('mouseout', function() {
         $("#hoverinstagram").attr('src','../content/instagram.png')
     });
-
-
-
 })

@@ -1,78 +1,13 @@
-/*------------TEMPLATE------------*/
-body{
-    margin:auto;
-    background: #60f57a78;
-}
-#container{
-    min-width: fit-content;
-}
-#main{
-    color: greenyellow;
-    min-height: 100vh;
-    background-image: url("../content/wall3.jpg");
-}
-
-.header *{
-    vertical-align: middle;
-}
-
-#topLinks li, #topLinks, #socialLinks, #socialLinks li{
-    display: inline-block;
-}
-#home img {
-    vertical-align: top;
-    cursor: pointer;
-    margin-left: 45px;
-    margin-right: 200px;
-    margin-bottom: 30px;
-    width: 100px;
-}
-.line{
-    margin-left: 28px;
-}
-#topLinks{
-    font-weight: bold;
-    font-size: 31px;
-    font-family: sans-serif;
-    margin-right: 50px;
-}
-#topLinks li a{
-    color: black;
-    margin-left: 20px;
-    text-decoration: none;
-}
-#topLinks a:hover{
-    transition: .3s ease;
-    color: white;
-}
-
-#socialLinks li{
-    margin-left: 20px;
-    margin-top: 15px;
-}
-#socialLinks img{
-    width: 70px;
-}
-
-.header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: linear-gradient(360deg, #494747, #61f77b);
-}
-.footer{
-    background: linear-gradient(360deg, #494747, #61f77b);
-    height: 40px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-/*------------TEMPLATE------------*/
 #contactForm{
-    background: #00427b45;
+    max-width: 1780px;
     display: block;
     text-align: -webkit-center;
     padding-top: 35px;
     padding-bottom: 35px;
+}
+#contactFormContainer{
+    background: #00427b45;
+
 }
 
 #form{
@@ -101,14 +36,12 @@ body{
     font-size: 24px;
     line-height: 1.5;
     display: inline-block;
-    min-width: 330px;
+    min-width: 340px;
     height: 60px;
     word-break: break-all;
     margin-bottom: 18px;
 }
-#subjectField{
-    margin-left: 20px;
-}
+
 
 input[type="submit"] {
     border-radius: 10px;
@@ -128,7 +61,7 @@ input[type="submit"] {
     min-width: 694px;
     max-width: 694px;
     min-height: 120px;
-
+    padding: 5px;
 }
 
 .warning{

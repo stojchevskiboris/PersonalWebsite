@@ -8,11 +8,11 @@
     <script src="lib/jquery/jquery.js"></script>
     <script src="lib/jquery/jquery-ui.js"></script>
     <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body onload="start()">
 <div id="container">
-
 
 <div class="header">
     <span title="Home page" id="home"><img src="content/b_white.png"></span>
@@ -26,29 +26,60 @@
 
     </ul>
     <ul id="socialLinks">
-        <li id="linkedin"> <a href="https://www.linkedin.com/in/boris-stojchevski/"> <img id="hoverlinkedin" title="Connect with me on LinkedIn" src="content/linkedin.png"> </a></li>
-        <li id="github"> <a href="https://github.com/stojchevskiboris"> <img id="hovergithub" title="View project source codes on Github" src="content/github.png"></a> </li>
-        <li id="facebook"> <a href="https://www.facebook.com/boris.stojcevski.5/"> <img id="hoverfacebook" title="Add me on Facebook" src="content/facebook.png"></a> </li>
-        <li id="instagram"> <a href="https://www.instagram.com/stojcevski.b/"> <img id="hoverinstagram" title="Follow me on Instagram" src="content/instagram.png"> </a> </li>
+        <li id="linkedin"> <a href="https://www.linkedin.com/in/boris-stojchevski/" target=”_blank”> <img id="hoverlinkedin" title="Connect with me on LinkedIn" src="content/linkedin.png"> </a></li>
+        <li id="github"> <a href="https://github.com/stojchevskiboris" target=”_blank”> <img id="hovergithub" title="View project source codes on Github" src="content/github.png"></a> </li>
+        <li id="facebook"> <a href="https://www.facebook.com/boris.stojcevski.5/" target=”_blank”> <img id="hoverfacebook" title="Add me on Facebook" src="content/facebook.png"></a> </li>
+        <li id="instagram"> <a href="https://www.instagram.com/stojcevski.b/" target=”_blank”> <img id="hoverinstagram" title="Follow me on Instagram" src="content/instagram.png"> </a> </li>
     </ul>
 </div>
 
 <div id="main">
 <br>
-<!--    ubo e da e ko vo cmd prozorec!<img src="content/cmd.png">-->
     <p id="main1"></p>
-    <div id="m5">
-        <span id="myskills">My skills:</span>
-        <ul id="skills">
-            <li>HTML, CSS and JavaScript <img src="content/html.png"></li>
-            <li>Bootstrap <img src="content/bootstrap.png"></li>
-            <li>.NET & MVC (C#) <img src="content/dotnetMVC.png"><img src="content/cSharp.png"></li>
-            <li>Java & DataStructures in Java <img src="content/java.png"> <img src="content/dataStructures.png"> </li>
-            <li>Git & Azure (Version Control) <img src="content/git.png"> <img src="content/azure.png"></li>
-            <li>SQL Databases <img src="content/sql.png"></li>
-            <li>Adobe Illustrator & Photoshop <img src="content/ai.png"> <img src="content/ps.png"> </li>
-        </ul>
-
+    <div id="m6">
+        <span id="skillsHeader">Skills:</span>
+        <table id="table1">
+            <tr>
+                <td><img class="listBullet" src="content/b1_grey.png"></td>
+                <td>HTML, CSS and JavaScript</td>
+                <td><img src="content/html.png"></td>
+            </tr>
+            <tr>
+                <td><img class="listBullet" src="content/b1_grey.png"></td>
+                <td>Bootstrap</td>
+                <td><img src="content/bootstrap.png"></td>
+            </tr>
+            <tr>
+                <td><img class="listBullet" src="content/b1_grey.png"></td>
+                <td>.NET & MVC (C#) </td>
+                <td><img src="content/dotnetMVC.png"> <img src="content/cSharp.png"></td>
+            </tr>
+            <tr>
+                <td><img class="listBullet" src="content/b1_grey.png"></td>
+                <td>Java & DataStructures in Java</td>
+                <td> <img src="content/java.png"> <img src="content/dataStructures.png"></td>
+            </tr>
+            <tr>
+                <td><img class="listBullet" src="content/b1_grey.png"></td>
+                <td>Git & Azure (Version Control)</td>
+                <td> <img src="content/git.png"> <img src="content/azure.png"></td>
+            </tr>
+            <tr>
+                <td><img class="listBullet" src="content/b1_grey.png"></td>
+                <td>SQL Databases</td>
+                <td> <img src="content/sql.png"></td>
+            </tr>
+            <tr>
+                <td><img class="listBullet" src="content/b1_grey.png"></td>
+                <td>Adobe Illustrator & Photoshop</td>
+                <td> <img src="content/ai.png"> <img src="content/ps.png"></td>
+            </tr>
+            <tr>
+                <td><img class="listBullet" src="content/b1_grey.png"></td>
+                <td>C and C++ basics</td>
+                <td> <img src="content/c.png"> <img src="content/cpp.png"></td>
+            </tr>
+        </table>
     </div>
 
     <div id="portfolio">
