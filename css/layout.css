@@ -64,6 +64,8 @@ body{
     height: 40px;
     text-align: center;
     padding-top: 10px;
-    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 112.5%;
+    line-height: 1.6em;
 }
 /*------------LAYOUT------------*/

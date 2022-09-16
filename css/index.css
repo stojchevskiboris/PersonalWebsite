@@ -28,7 +28,7 @@
     padding-top: 45px;
     background-repeat: no-repeat;
     background-position-x: 68px;
-    background-image: url("../content/cmd.png");
+    background-image: url("../content/cmd_2.png");
     height: 374px;
     margin-top: 75px;
     vertical-align: top;
@@ -39,6 +39,7 @@
     font-weight: bold;
     font-size: 30px;
     font-family: "Courier New", Courier, monospace;
+    line-height: 1.1;
 }
 #main2{
     border-radius: 10px;

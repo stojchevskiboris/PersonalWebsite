@@ -1,4 +1,26 @@
 $(document).ready(function () {
+
+    $("#modal_div").dialog({
+        autoOpen: false,
+        modal: false,
+        buttons: {
+            Close: function () {
+                $("#modal_div").dialog("close")
+            }
+        }
+    })
+    $("#cvButton").click(function () {
+        $("#modal_div").dialog("open")
+        $(".ui-dialog").css("width", "800")
+        $("#cvPhoto").css("width","740")
+        $("#cvPhoto").css("height","auto")
+        $(".ui-dialog").css("height", "400")
+        $(".ui-dialog").css("overflow-y", "scroll")
+        $(".ui-dialog").css("inset", "100px 0px 0px 50px")
+        // window.scrollTo(0,0);
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    })
+
     var time = new Date().getTime();
     var date = new Date(time);
     $("#timeNow").html(date.getFullYear());

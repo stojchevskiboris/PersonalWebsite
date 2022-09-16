@@ -66,6 +66,7 @@ input[type="submit"] {
 
 .warning{
     border: 2px solid red;
+    background: #ffc8c8;
 }
 #contact{
     color: white;
@@ -73,7 +74,9 @@ input[type="submit"] {
     text-decoration: none;
     cursor: pointer;
 }
-
+#warn{
+    display: none;
+}
 
 #cMe{
 

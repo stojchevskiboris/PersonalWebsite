@@ -45,8 +45,8 @@
             <p id="cMe">CONTACT ME</p>
             <h3 id="c1">Let`s get in touch</h3>
             <div class="field" id="emailField">
-                <label id="labelEmail" for="from_name">Email</label>
-                <input type="email" name="from_name" id="from_name">
+                <label id="labelEmail" for="from_name">Email<span id="warn">*</span></label>
+                <input type="email" name="from_name" id="from_name" oninput="removeAttr()">
             </div>
             <div class="field" id="subjectField">
                 <label for="reply_to">Subject</label>

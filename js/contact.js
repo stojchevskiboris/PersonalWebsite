@@ -6,6 +6,7 @@ document.getElementById('form')
         var emailfield = document.getElementById("from_name");
         if(emailfield.value==""){
             emailfield.setAttribute('class','warning');
+            document.getElementById("warn").style.display = "inline-block"
             return;
         }
 
@@ -25,6 +26,12 @@ document.getElementById('form')
             });
         emailfield.removeAttribute("class");
     });
+
+function removeAttr(){
+    var field = document.getElementById("from_name");
+    field.removeAttribute("class");
+}
+
 
 var time = new Date().getTime();
 var date = new Date(time);
