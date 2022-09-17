@@ -35,13 +35,13 @@
 #modal_div{
     max-height: 700px;
 }
-#buttonDiv{
+.buttonDiv{
     display: flex;
     justify-content: center;
 }
-#cvButton{
+#cvButton, #certButton{
     display: block;
-    margin-top: 50px;
+    margin-top: 80px;
 
     border: 3px solid #38753b;
     width: 280px;
@@ -52,10 +52,28 @@
     background: #98e097;
     color: #00360e;
 }
-#cvButton:hover{
+#cvButton:hover, #certButton:hover{
     background: #5bc45a;
     color: white;
     transition: .2s ease;
+}
+#certificates{
+    display: none;
+    width: 700px;
+    margin: auto;
+}
+#certificates img{
+    width: 550px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.certCard a{
+    text-decoration: none;
+    color: greenyellow;
+    text-decoration: underline;
+}
+.certCard{
+    margin-bottom: 40px;
 }
 /* ================ The Timeline ================ */
 
@@ -68,6 +86,7 @@
     margin-top: 20px;
     padding: 1em 0;
     list-style-type: none;
+    font-size: 25px;
 }
 
 .timeline:before {
@@ -328,3 +347,43 @@
 }
 
 
+/*Animation*/
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+    position: relative;
+    display:inline;
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+/* Column Grids End */
+
+.wrapper { width: 750px; margin: 80px auto; position: relative; padding-left: 100px;}
+.counter {
+    background-color: #ffffff36;
+    padding: 20px 20px 45px 20px;
+    border-radius: 5px;
+    line-height: 20px;
+    height: 70px;
+    vertical-align: top;
+}
+.count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+.count-text { font-size: 19px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+.fa-2x { margin: 0 auto; float: none; display: table; color: #4ad1e5; }
+
+/*Animation*/
+#control{
+    color: #ffffff00;
+}

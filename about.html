@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
-<body>
+<body onload="start2()">
 <!--cv & certificates<br>-->
 <!--Sou car samoil Finki-->
 <div id="container">
@@ -38,6 +36,8 @@
     </div>
 
     <div id="main">
+        <br>
+        <br>
         <br>
         <ul class="timeline">
 
@@ -75,15 +75,63 @@
             </li>
 
         </ul>
-        <div id="buttonDiv">
+        <div class="buttonDiv">
             <button id="cvButton">Show CV</button>
+        </div>
+<!--        <div id="box2">BOX2</div>-->
+        <div class="buttonDiv">
+            <button id="certButton">Show Certificates</button>
+        </div>
+        <div id="certificates">
+            <div class="certCard">
+                <h3>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6970047270461313025/">LinkedIn Skill Badge: Front-End Development</a>
+                </h3>
+                <img src="content/liFED.png">
+            </div>
+<!--            <div class="certCard">-->
+<!--                <h3>-->
+<!--                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6970047270461313025/">LinkedIn Skill Badge: Front-End Development</a>-->
+<!--                </h3>-->
+<!--                <img src="content/liFED.png">-->
+<!--            </div>-->
         </div>
         <div id="modal_div">
             <img id="cvPhoto" src="./content/cv.png" width="488" height="695" />
         </div>
-        <br>
-    </div>
 
+<!--        Animation-->
+
+        <div class="wrapper">
+            <h1>Personal statistics:</h1>
+
+            <div class="counter col_fourth">
+                <i class="fa fa-code fa-2x"></i>
+                <h2 class="timer count-title count-number" data-to="20" data-speed="5000"></h2>
+                <p class="count-text ">Different courses taken over the past 2 years</p>
+            </div>
+
+            <div class="counter col_fourth">
+                <i class="fa fa-coffee fa-2x"></i>
+                <h2 class="timer count-title count-number" data-to="12" data-speed="5000"></h2>
+                <p class="count-text ">Projects I`m working on</p>
+            </div>
+
+            <div class="counter col_fourth">
+                <i class="fa fa-lightbulb-o fa-2x"></i>
+                <h2 class="timer count-title count-number" data-to="700000" data-speed="5000"></h2>
+                <p class="count-text ">Over ^ lines of code </p>
+            </div>
+
+<!--            <div class="counter col_fourth end">-->
+<!--                <i class="fa fa-bug fa-2x"></i>-->
+<!--                <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>-->
+<!--                <p class="count-text ">SomeText GoesHere</p>-->
+<!--            </div>-->
+        </div>
+<!--        Animation-->
+        <div id="control">.</div>
+    </div>
     <div class="footer">
         Copyright &copy; <span id="timeNow"></span> Boris Stojchevski
     </div>
