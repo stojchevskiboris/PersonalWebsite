@@ -17,11 +17,33 @@
     color: white;
     border: 6px solid #6fa15f;
     background: #61f77b7a;
-    height: 250px;
+    height: 270px;
     max-width: 700px;
     display: block;
     margin-bottom: 20px;
+
 }
 #animation{
     display: inline-block;
+}
+.card h1{
+    line-height: 0;
+    min-width: max-content;
+    padding-bottom: 20px;
+}
+.desc{
+    font-size: 20px;
+    padding-top: 10px;
+    width: 40%;
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+}
+.card img{
+    width: 50%;
+    float: right;
+    max-height: 80%;
+}
+.card:hover{
+    cursor: pointer;
 }

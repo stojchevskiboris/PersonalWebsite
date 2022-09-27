@@ -37,4 +37,8 @@ $(document).ready(function () {
     $("#hoverhome").on('mouseout', function() {
         $("#hoverhome").attr('src','../content/b.png')
     });
+
+    $("#avtokamp").click(function (){
+        alert("test");
+    })
 })
