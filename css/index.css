@@ -2,14 +2,16 @@
 #portfolio{
     margin-top: 20px;
     display: block;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 #portfolio button{
+    margin-top: 10px;
+    margin-left: 20px;
     vertical-align: top;
     border: 3px solid #38753b;
-    width: 280px;
+    width: 220px;
     height: 60px;
-    font-size: 24px;
+    font-size: 25px;
     font-family: sans-serif;
     border-radius: 10px;
     background: #98e097;
@@ -22,7 +24,7 @@
 
 }
 #contactButton{
-    margin-left: 20px;
+
 }
 #main1{
     padding-top: 45px;
