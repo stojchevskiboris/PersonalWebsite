@@ -89,7 +89,7 @@ $(document).ready(function () {
 
 
     function checkpNum(){
-        console.log(pNum)
+        console.log("Slide number:"+pNum)
         if (pNum==1){
             //close remaining views
             $("#projectLogoDesigns").fadeOut();

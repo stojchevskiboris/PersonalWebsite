@@ -77,29 +77,37 @@
     transition: .2s ease;
 }
 
-#avtokampLink img{
+.innerLink img{
     max-width: 30px;
     vertical-align: bottom;
 }
-#avtokampLink span{
+.innerLink span{
     font-size: 30px;
     text-decoration: none;
     color: lightskyblue;
 }
 #detailedCards{
-    margin-left: 30px;
+    padding-bottom: 30px;
+    margin: 0px 30px 0px 30px;
 }
 #detailedCards h1{
     margin-top: 50px;
     margin-bottom: 80px;
 }
 .inner-desc{
-    color: white;
+    font-family: Arial;
+    color: #bbbbbb;
     font-size: 20px;
     text-align: justify;
     max-width: 800px;
 }
-
+#logoImages img{
+    max-width: 700px;
+    max-height: 300px;
+    margin: 20px;
+    border: 5px solid darkgreen;
+    border-radius: 15px;
+}
 
 
 /*///////////////////////////*/
@@ -111,6 +119,8 @@
 }
 
 .carousel-inner {
+    border-radius: 10px;
+    border: 5px solid darkgreen;
     position: relative;
     overflow: hidden;
     width: 100%;
