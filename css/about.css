@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
 }
-#cvButton, #certButton{
+#cvButton, #certButton, #projectsButton{
     display: block;
     margin-top: 80px;
 
@@ -52,10 +52,13 @@
     background: #98e097;
     color: #00360e;
 }
-#cvButton:hover, #certButton:hover{
+#cvButton:hover, #certButton:hover, #projectsButton:hover{
     background: #5bc45a;
     color: white;
     transition: .2s ease;
+}
+#certButton{
+    margin-bottom: 10px;
 }
 #certificates{
     padding: 10px;
