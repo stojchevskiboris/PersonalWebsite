@@ -76,11 +76,7 @@
     color: white;
     transition: .2s ease;
 }
-#avtokampLink{
-    background: #2f9cff2b;
-    border-radius: 10px;
-    width: max-content;
-}
+
 #avtokampLink img{
     max-width: 30px;
     vertical-align: bottom;
