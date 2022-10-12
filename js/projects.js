@@ -62,24 +62,32 @@ $(document).ready(function () {
         }, 390);
         pNum = 2;
     })
+    $("#tictac").click(function (){
+        $("#allCards").fadeOut();
+        setTimeout(function(){
+            $("#tictactoe").fadeIn();
+        }, 390);
+        pNum = 3;
+    })
     $("#portweb").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#projectPortWeb").fadeIn();
         }, 390);
-        pNum = 3;
+        pNum = 4;
     })
+
 
     $(".prev").click(function (){
         if (pNum==1)
-            pNum=3;
+            pNum=4;
         else {
             pNum--;
         }
         checkpNum();
     })
     $(".next").click(function (){
-        if (pNum==3)
+        if (pNum==4)
             pNum=1;
         else {
             pNum++;
@@ -94,6 +102,7 @@ $(document).ready(function () {
             //close remaining views
             $("#projectLogoDesigns").fadeOut();
             $("#projectPortWeb").fadeOut();
+            $("#tictactoe").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectAvtokamp").fadeIn();
@@ -104,6 +113,7 @@ $(document).ready(function () {
             //close remaining views
             $("#projectAvtokamp").fadeOut();
             $("#projectPortWeb").fadeOut();
+            $("#tictactoe").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectLogoDesigns").fadeIn();
@@ -114,6 +124,18 @@ $(document).ready(function () {
             //close remaining views
             $("#projectAvtokamp").fadeOut();
             $("#projectLogoDesigns").fadeOut();
+            $("#projectPortWeb").fadeOut();
+            //open actual view
+            setTimeout(function(){
+                $("#tictactoe").fadeIn();
+            }, 390);
+        }
+
+        if (pNum==4){
+            //close remaining views
+            $("#projectAvtokamp").fadeOut();
+            $("#projectLogoDesigns").fadeOut();
+            $("#tictactoe").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectPortWeb").fadeIn();
