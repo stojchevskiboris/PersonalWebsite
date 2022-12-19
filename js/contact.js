@@ -20,6 +20,9 @@ document.getElementById('form')
             .then(() => {
                 btn.value = 'Send Email';
                 alert('Email sent!');
+                document.getElementById("from_name").value="";
+                document.getElementById("reply_to").value="";
+                document.getElementById("message").value="";
             }, (err) => {
                 btn.value = 'Send Email';
                 alert(JSON.stringify(err));

@@ -46,15 +46,15 @@
             <h3 id="c1">Let`s get in touch</h3>
             <div class="field" id="emailField">
                 <label id="labelEmail" for="from_name">Email<span id="warn">*</span></label>
-                <input type="email" name="from_name" id="from_name" oninput="removeAttr()">
+                <input required="required" type="email" name="from_name" id="from_name" oninput="removeAttr()">
             </div>
             <div class="field" id="subjectField">
                 <label for="reply_to">Subject</label>
-                <input type="text" autocomplete="false" name="reply_to" id="reply_to">
+                <input required="required"  type="text" autocomplete="false" name="reply_to" id="reply_to">
             </div>
             <div class="field" id="messageField">
                 <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea required="required" name="message" id="message"></textarea>
                 <!--        <input type="text" name="message" id="message">-->
             </div>
             <input type="submit" id="button" value="Send Email" >
