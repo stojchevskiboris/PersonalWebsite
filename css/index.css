@@ -72,6 +72,7 @@
     margin-bottom: 30px;
     display: inline-block;
     text-align: -webkit-center;
+    font-family: monospace;
 }
 td{
     padding-left: 15px;
