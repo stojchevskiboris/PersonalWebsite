@@ -86,8 +86,13 @@
     padding-left: 10px;
     border-left: 5px white solid;
 }
+#u_sql{
+    padding-left: 10px;
+    border-left: 5px white solid;
+}
 #linkedh2{
     cursor: pointer;
+    color: #93ff93;
 }
 #linkedh2 img{
     width: 20px;
