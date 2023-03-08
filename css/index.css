@@ -113,3 +113,7 @@ td{
         background: #373c34;
     }
 }
+
+#visitor{
+    display: none;
+}

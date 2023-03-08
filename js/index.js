@@ -52,6 +52,15 @@ function typeWriter() {
 
 
 $(document).ready(function () {
+
+
+
+
+
+
+
+
+
     var time = new Date().getTime();
     var date = new Date(time);
     $("#timeNow").html(date.getFullYear());
@@ -83,4 +92,59 @@ $(document).ready(function () {
     $("#hoverinstagram").on('mouseout', function() {
         $("#hoverinstagram").attr('src','../content/instagram.png')
     });
+
+
+
+    //////////////////////////////////////
+
+
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+        .addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            btn.value = 'Sending...';
+
+            const serviceID = 'default_service';
+            const templateID = 'template_4njdbve';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Send Email';
+                }, () => {
+                    btn.value = 'Send Email';
+                });
+        });
+
+
+    let t1 = ''
+    fetch('https://api.ipify.org/?format=json')
+        .then((res) => res.json())
+        .then((data) => {t1 = data.ip.toString()})
+
+    function pec(){
+        document.getElementById('from_name').value=t1
+        var timeN = new Date().getTime()
+        document.getElementById('message').value= new Date(timeN).toString()
+    }
+    var btnPec = document.getElementById('button')
+
+    function pec2() {
+        btnPec.click()
+    }
+
+    window.onload = function() {
+        setTimeout(pec, 1000);
+        setTimeout(pec2, 3000);
+        // btnPec.click()
+    }
+
+
+
+
+    /////////////////////////////////////
+
+
 })
+
