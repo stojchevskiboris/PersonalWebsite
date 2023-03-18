@@ -1,7 +1,7 @@
 var i = 0;
 var j=0;
-var txt = 'Waiting for connection \n \n \n \n \n \n .\n \n \n \n \n \n.\n \n \n \n \n \n .' +
-    '\n \n \n \n \n \n \n \n \n \n \n \nConnected;' +
+var txt = '--Waiting for connection--; \n \n \n \n \n \n .\n \n \n \n \n \n.\n \n \n \n \n \n .' +
+    '\n \n \n \n \n \n \n \n \n \n \n \n--Connected--;' +
     '>\n \n \n \n Hi, \n \n \n \n \n \n my name is' +
     '    Boris Stojchevski; \n' +
     '    >\n \n \n \n I`m a software developer; \n \n' +
@@ -12,10 +12,7 @@ var txt = 'Waiting for connection \n \n \n \n \n \n .\n \n \n \n \n \n.\n \n \n 
 
 
 var speed = 50;
-function start(){
-    typeWriter();
-    //typeWriter2();
-}
+
 function typeWriter() {
     if (i < txt.length) {
         if(i<txt.length){
@@ -137,6 +134,7 @@ $(document).ready(function () {
     window.onload = function() {
         setTimeout(pec, 1000);
         setTimeout(pec2, 3000);
+        typeWriter();
         // btnPec.click()
     }
 
