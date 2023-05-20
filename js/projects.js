@@ -55,39 +55,46 @@ $(document).ready(function () {
             }, 390);
         pNum = 1;
     })
+    $("#weather").click(function (){
+        $("#allCards").fadeOut();
+        setTimeout(function(){
+            $("#projectWeather").fadeIn();
+        }, 390);
+        pNum = 2;
+    })
     $("#logos").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#projectLogoDesigns").fadeIn();
         }, 390);
-        pNum = 2;
+        pNum = 3;
     })
     $("#tictac").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#tictactoe").fadeIn();
         }, 390);
-        pNum = 3;
+        pNum = 4;
     })
     $("#portweb").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#projectPortWeb").fadeIn();
         }, 390);
-        pNum = 4;
+        pNum = 5;
     })
 
 
     $(".prev").click(function (){
         if (pNum==1)
-            pNum=4;
+            pNum=5;
         else {
             pNum--;
         }
         checkpNum();
     })
     $(".next").click(function (){
-        if (pNum==4)
+        if (pNum==5)
             pNum=1;
         else {
             pNum++;
@@ -103,6 +110,7 @@ $(document).ready(function () {
             $("#projectLogoDesigns").fadeOut();
             $("#projectPortWeb").fadeOut();
             $("#tictactoe").fadeOut();
+            $("#projectWeather").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectAvtokamp").fadeIn();
@@ -111,23 +119,25 @@ $(document).ready(function () {
 
         if (pNum==2){
             //close remaining views
+            $("#projectLogoDesigns").fadeOut();
             $("#projectAvtokamp").fadeOut();
             $("#projectPortWeb").fadeOut();
             $("#tictactoe").fadeOut();
             //open actual view
             setTimeout(function(){
-                $("#projectLogoDesigns").fadeIn();
+                $("#projectWeather").fadeIn();
             }, 390);
         }
 
         if (pNum==3){
             //close remaining views
             $("#projectAvtokamp").fadeOut();
-            $("#projectLogoDesigns").fadeOut();
             $("#projectPortWeb").fadeOut();
+            $("#tictactoe").fadeOut();
+            $("#projectWeather").fadeOut();
             //open actual view
             setTimeout(function(){
-                $("#tictactoe").fadeIn();
+                $("#projectLogoDesigns").fadeIn();
             }, 390);
         }
 
@@ -135,7 +145,20 @@ $(document).ready(function () {
             //close remaining views
             $("#projectAvtokamp").fadeOut();
             $("#projectLogoDesigns").fadeOut();
+            $("#projectPortWeb").fadeOut();
+            $("#projectWeather").fadeOut();
+            //open actual view
+            setTimeout(function(){
+                $("#tictactoe").fadeIn();
+            }, 390);
+        }
+
+        if (pNum==5){
+            //close remaining views
+            $("#projectAvtokamp").fadeOut();
+            $("#projectLogoDesigns").fadeOut();
             $("#tictactoe").fadeOut();
+            $("#projectWeather").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectPortWeb").fadeIn();

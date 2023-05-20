@@ -53,7 +53,7 @@
 .card:hover{
     cursor: pointer;
 }
-#projectAvtokamp, #projectLogoDesigns, #tictactoe, #projectPortWeb{
+#projectAvtokamp, #projectWeather, #projectLogoDesigns, #tictactoe, #projectPortWeb{
     display: none;
 }
 .buttonCSS{
@@ -116,6 +116,11 @@
     border-radius: 10px;
     border: 5px solid darkgreen;
     width: 730px;
+}
+
+#weatherImages img{
+    border: 5px solid darkgreen;
+    border-radius: 10px;
 }
 
 /*///////////////////////////*/
