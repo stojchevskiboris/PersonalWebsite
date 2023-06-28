@@ -1,5 +1,5 @@
 var i = 0;
-var j=0;
+var j = 0;
 var txt = '--Waiting for connection--; \n \n \n \n \n \n .\n \n \n \n \n \n.\n \n \n \n \n \n .' +
     '\n \n \n \n \n \n \n \n \n \n \n \n--Connected--;' +
     '>\n \n \n \n Hi, \n \n \n \n \n \n my name is' +
@@ -15,8 +15,8 @@ var speed = 50;
 
 function typeWriter() {
     if (i < txt.length) {
-        if(i<txt.length){
-            if (txt.charAt(i-1)==';'){
+        if (i < txt.length) {
+            if (txt.charAt(i - 1) == ';') {
                 document.getElementById("main1").innerHTML += "<br>";
             }
         }
@@ -47,49 +47,40 @@ function typeWriter() {
 // }
 
 
-
 $(document).ready(function () {
-
-
-
-
-
-
-
 
 
     var time = new Date().getTime();
     var date = new Date(time);
     $("#timeNow").html(date.getFullYear());
 
-    $("#hoverlinkedin").on('mouseover', function() {
-        $("#hoverlinkedin").attr('src','../content/linkedin_hover.png')
+    $("#hoverlinkedin").on('mouseover', function () {
+        $("#hoverlinkedin").attr('src', '../content/linkedin_hover.png')
     });
-    $("#hoverlinkedin").on('mouseout', function() {
-        $("#hoverlinkedin").attr('src','../content/linkedin.png')
-    });
-
-    $("#hovergithub").on('mouseover', function() {
-        $("#hovergithub").attr('src','../content/github_hover.png')
-    });
-    $("#hovergithub").on('mouseout', function() {
-        $("#hovergithub").attr('src','../content/github.png')
+    $("#hoverlinkedin").on('mouseout', function () {
+        $("#hoverlinkedin").attr('src', '../content/linkedin.png')
     });
 
-    $("#hoverfacebook").on('mouseover', function() {
-        $("#hoverfacebook").attr('src','../content/facebook_hover.png')
+    $("#hovergithub").on('mouseover', function () {
+        $("#hovergithub").attr('src', '../content/github_hover.png')
     });
-    $("#hoverfacebook").on('mouseout', function() {
-        $("#hoverfacebook").attr('src','../content/facebook.png')
-    });
-
-    $("#hoverinstagram").on('mouseover', function() {
-        $("#hoverinstagram").attr('src','../content/instagram_hover.png')
-    });
-    $("#hoverinstagram").on('mouseout', function() {
-        $("#hoverinstagram").attr('src','../content/instagram.png')
+    $("#hovergithub").on('mouseout', function () {
+        $("#hovergithub").attr('src', '../content/github.png')
     });
 
+    $("#hoverfacebook").on('mouseover', function () {
+        $("#hoverfacebook").attr('src', '../content/facebook_hover.png')
+    });
+    $("#hoverfacebook").on('mouseout', function () {
+        $("#hoverfacebook").attr('src', '../content/facebook.png')
+    });
+
+    $("#hoverinstagram").on('mouseover', function () {
+        $("#hoverinstagram").attr('src', '../content/instagram_hover.png')
+    });
+    $("#hoverinstagram").on('mouseout', function () {
+        $("#hoverinstagram").attr('src', '../content/instagram.png')
+    });
 
 
     //////////////////////////////////////
@@ -98,7 +89,7 @@ $(document).ready(function () {
     const btn = document.getElementById('button');
 
     document.getElementById('form')
-        .addEventListener('submit', function(event) {
+        .addEventListener('submit', function (event) {
             event.preventDefault();
 
             btn.value = 'Sending...';
@@ -118,27 +109,28 @@ $(document).ready(function () {
     let t1 = ''
     fetch('https://api.ipify.org/?format=json')
         .then((res) => res.json())
-        .then((data) => {t1 = data.ip.toString()})
+        .then((data) => {
+            t1 = data.ip.toString()
+        })
 
-    function pec(){
-        document.getElementById('from_name').value=t1
+    function pec() {
+        document.getElementById('from_name').value = t1
         var timeN = new Date().getTime()
-        document.getElementById('message').value= new Date(timeN).toString()
+        document.getElementById('message').value = new Date(timeN).toString()
     }
+
     var btnPec = document.getElementById('button')
 
     function pec2() {
         btnPec.click()
     }
 
-    window.onload = function() {
+    window.onload = function () {
         setTimeout(pec, 1000);
         setTimeout(pec2, 3000);
         typeWriter();
         // btnPec.click()
     }
-
-
 
 
     /////////////////////////////////////

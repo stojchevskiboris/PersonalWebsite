@@ -62,39 +62,46 @@ $(document).ready(function () {
         }, 390);
         pNum = 2;
     })
+    $("#music").click(function (){
+        $("#allCards").fadeOut();
+        setTimeout(function(){
+            $("#projectMusic").fadeIn();
+        }, 390);
+        pNum = 3;
+    })
     $("#logos").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#projectLogoDesigns").fadeIn();
         }, 390);
-        pNum = 3;
+        pNum = 4;
     })
     $("#tictac").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#tictactoe").fadeIn();
         }, 390);
-        pNum = 4;
+        pNum = 5;
     })
     $("#portweb").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#projectPortWeb").fadeIn();
         }, 390);
-        pNum = 5;
+        pNum = 6;
     })
 
 
     $(".prev").click(function (){
         if (pNum==1)
-            pNum=5;
+            pNum=6;
         else {
             pNum--;
         }
         checkpNum();
     })
     $(".next").click(function (){
-        if (pNum==5)
+        if (pNum==6)
             pNum=1;
         else {
             pNum++;
@@ -111,6 +118,7 @@ $(document).ready(function () {
             $("#projectPortWeb").fadeOut();
             $("#tictactoe").fadeOut();
             $("#projectWeather").fadeOut();
+            $("#projectMusic").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectAvtokamp").fadeIn();
@@ -123,6 +131,7 @@ $(document).ready(function () {
             $("#projectAvtokamp").fadeOut();
             $("#projectPortWeb").fadeOut();
             $("#tictactoe").fadeOut();
+            $("#projectMusic").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectWeather").fadeIn();
@@ -131,25 +140,27 @@ $(document).ready(function () {
 
         if (pNum==3){
             //close remaining views
+            $("#projectLogoDesigns").fadeOut();
             $("#projectAvtokamp").fadeOut();
             $("#projectPortWeb").fadeOut();
             $("#tictactoe").fadeOut();
             $("#projectWeather").fadeOut();
             //open actual view
             setTimeout(function(){
-                $("#projectLogoDesigns").fadeIn();
+                $("#projectMusic").fadeIn();
             }, 390);
         }
 
         if (pNum==4){
             //close remaining views
             $("#projectAvtokamp").fadeOut();
-            $("#projectLogoDesigns").fadeOut();
             $("#projectPortWeb").fadeOut();
+            $("#tictactoe").fadeOut();
             $("#projectWeather").fadeOut();
+            $("#projectMusic").fadeOut();
             //open actual view
             setTimeout(function(){
-                $("#tictactoe").fadeIn();
+                $("#projectLogoDesigns").fadeIn();
             }, 390);
         }
 
@@ -157,8 +168,22 @@ $(document).ready(function () {
             //close remaining views
             $("#projectAvtokamp").fadeOut();
             $("#projectLogoDesigns").fadeOut();
+            $("#projectPortWeb").fadeOut();
+            $("#projectWeather").fadeOut();
+            $("#projectMusic").fadeOut();
+            //open actual view
+            setTimeout(function(){
+                $("#tictactoe").fadeIn();
+            }, 390);
+        }
+
+        if (pNum==6){
+            //close remaining views
+            $("#projectAvtokamp").fadeOut();
+            $("#projectLogoDesigns").fadeOut();
             $("#tictactoe").fadeOut();
             $("#projectWeather").fadeOut();
+            $("#projectMusic").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectPortWeb").fadeIn();
