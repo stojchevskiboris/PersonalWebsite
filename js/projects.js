@@ -62,46 +62,53 @@ $(document).ready(function () {
         }, 390);
         pNum = 2;
     })
+    $("#vuetube").click(function (){
+        $("#allCards").fadeOut();
+        setTimeout(function(){
+            $("#projectVuetube").fadeIn();
+        }, 390);
+        pNum = 3;
+    })
     $("#music").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#projectMusic").fadeIn();
         }, 390);
-        pNum = 3;
+        pNum = 4;
     })
     $("#logos").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#projectLogoDesigns").fadeIn();
         }, 390);
-        pNum = 4;
+        pNum = 5;
     })
     $("#tictac").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#tictactoe").fadeIn();
         }, 390);
-        pNum = 5;
+        pNum = 6;
     })
     $("#portweb").click(function (){
         $("#allCards").fadeOut();
         setTimeout(function(){
             $("#projectPortWeb").fadeIn();
         }, 390);
-        pNum = 6;
+        pNum = 7;
     })
 
 
     $(".prev").click(function (){
         if (pNum==1)
-            pNum=6;
+            pNum=7;
         else {
             pNum--;
         }
         checkpNum();
     })
     $(".next").click(function (){
-        if (pNum==6)
+        if (pNum==7)
             pNum=1;
         else {
             pNum++;
@@ -118,6 +125,7 @@ $(document).ready(function () {
             $("#projectPortWeb").fadeOut();
             $("#tictactoe").fadeOut();
             $("#projectWeather").fadeOut();
+            $("#projectVuetube").fadeOut();
             $("#projectMusic").fadeOut();
             //open actual view
             setTimeout(function(){
@@ -132,6 +140,7 @@ $(document).ready(function () {
             $("#projectPortWeb").fadeOut();
             $("#tictactoe").fadeOut();
             $("#projectMusic").fadeOut();
+            $("#projectVuetube").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectWeather").fadeIn();
@@ -144,36 +153,39 @@ $(document).ready(function () {
             $("#projectAvtokamp").fadeOut();
             $("#projectPortWeb").fadeOut();
             $("#tictactoe").fadeOut();
+            $("#projectMusic").fadeOut();
             $("#projectWeather").fadeOut();
+            //open actual view
+            setTimeout(function(){
+                $("#projectVuetube").fadeIn();
+            }, 390);
+        }
+
+        if (pNum==4){
+            //close remaining views
+            $("#projectLogoDesigns").fadeOut();
+            $("#projectAvtokamp").fadeOut();
+            $("#projectPortWeb").fadeOut();
+            $("#tictactoe").fadeOut();
+            $("#projectWeather").fadeOut();
+            $("#projectVuetube").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectMusic").fadeIn();
             }, 390);
         }
 
-        if (pNum==4){
+        if (pNum==5){
             //close remaining views
             $("#projectAvtokamp").fadeOut();
             $("#projectPortWeb").fadeOut();
             $("#tictactoe").fadeOut();
             $("#projectWeather").fadeOut();
             $("#projectMusic").fadeOut();
+            $("#projectVuetube").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectLogoDesigns").fadeIn();
-            }, 390);
-        }
-
-        if (pNum==5){
-            //close remaining views
-            $("#projectAvtokamp").fadeOut();
-            $("#projectLogoDesigns").fadeOut();
-            $("#projectPortWeb").fadeOut();
-            $("#projectWeather").fadeOut();
-            $("#projectMusic").fadeOut();
-            //open actual view
-            setTimeout(function(){
-                $("#tictactoe").fadeIn();
             }, 390);
         }
 
@@ -181,9 +193,24 @@ $(document).ready(function () {
             //close remaining views
             $("#projectAvtokamp").fadeOut();
             $("#projectLogoDesigns").fadeOut();
+            $("#projectPortWeb").fadeOut();
+            $("#projectWeather").fadeOut();
+            $("#projectMusic").fadeOut();
+            $("#projectVuetube").fadeOut();
+            //open actual view
+            setTimeout(function(){
+                $("#tictactoe").fadeIn();
+            }, 390);
+        }
+
+        if (pNum==7){
+            //close remaining views
+            $("#projectAvtokamp").fadeOut();
+            $("#projectLogoDesigns").fadeOut();
             $("#tictactoe").fadeOut();
             $("#projectWeather").fadeOut();
             $("#projectMusic").fadeOut();
+            $("#projectVuetube").fadeOut();
             //open actual view
             setTimeout(function(){
                 $("#projectPortWeb").fadeIn();

@@ -32,67 +32,85 @@
 
         </ul>
         <ul id="socialLinks">
-            <li id="linkedin"> <a href="https://www.linkedin.com/in/boris-stojchevski/" target=”_blank”> <img id="hoverlinkedin" title="Connect with me on LinkedIn" src="content/linkedin.png"> </a></li>
-            <li id="github"> <a href="https://github.com/stojchevskiboris" target=”_blank”> <img id="hovergithub" title="View project source codes on Github" src="content/github.png"></a> </li>
-            <li id="facebook"> <a href="https://www.facebook.com/boris.stojchevski.5/" target=”_blank”> <img id="hoverfacebook" title="Add me on Facebook" src="content/facebook.png"></a> </li>
-            <li id="instagram"> <a href="https://www.instagram.com/stojcevski.b/" target=”_blank”> <img id="hoverinstagram" title="Follow me on Instagram" src="content/instagram.png"> </a> </li>
+            <li id="linkedin"><a href="https://www.linkedin.com/in/boris-stojchevski/" target=”_blank”> <img
+                    id="hoverlinkedin" title="Connect with me on LinkedIn" src="content/linkedin.png"> </a></li>
+            <li id="github"><a href="https://github.com/stojchevskiboris" target=”_blank”> <img id="hovergithub"
+                                                                                                title="View project source codes on Github"
+                                                                                                src="content/github.png"></a>
+            </li>
+            <li id="facebook"><a href="https://www.facebook.com/boris.stojchevski.5/" target=”_blank”> <img
+                    id="hoverfacebook" title="Add me on Facebook" src="content/facebook.png"></a></li>
+            <li id="instagram"><a href="https://www.instagram.com/stojcevski.b/" target=”_blank”> <img
+                    id="hoverinstagram" title="Follow me on Instagram" src="content/instagram.png"> </a></li>
         </ul>
     </div>
 
     <div id="main">
         <div id="allCards">
-        <br>
-        <h1 id="heading">Here are some of my projects:</h1>
-        <p id="infoP">Click on project to view info and source code</p>
-        <br><br><br>
-        <div id="projectCards">
-            <div class="card" id="avtokamp">
-                <h1>Apartment Reservation - Web Application</h1>
-                <div class="desc">A .NET Web-Application for clients
-                    about making online reservations for apartments,
-                    and at the same time the owner views and manages
-                    all the submitted reservations in real time if he
-                    has the admin privilege.</div>
-                <img src="content/projects/avtokamp1.png">
+            <br>
+            <h1 id="heading">Here are some of my projects:</h1>
+            <p id="infoP">Click on project to view info and source code</p>
+            <br><br><br>
+            <div id="projectCards">
+                <div class="card" id="avtokamp">
+                    <h1>Apartment Reservation - Web Application</h1>
+                    <div class="desc">A .NET Web-Application for clients
+                        about making online reservations for apartments,
+                        and at the same time the owner views and manages
+                        all the submitted reservations in real time if he
+                        has the admin privilege.
+                    </div>
+                    <img src="content/projects/avtokamp1.png">
 
+                </div>
+
+                <div class="card" id="weather">
+                    <h1>Weather Web Application</h1>
+                    <div class="desc">Real time weather application, with a coverage of API calls for weather forecast.
+                        Used bootstrap for styling
+                    </div>
+                    <img src="content/projects/weather.PNG">
+                </div>
+
+                <div class="card" id="vuetube">
+                    <h1>VueTube - Alternative YouTube Frontend</h1>
+                    <div class="desc">Basically YouTube with alternative frontend. Using YouTube Data API v3 for the
+                        data
+                    </div>
+                    <img src="content/projects/vuetube1.png">
+                </div>
+
+                <div class="card" id="music">
+                    <h1>Music E-Shop</h1>
+                    <div class="desc">Django Web-App for making orders
+                        by clients. Each order has its Customer and Receipt, and all the
+                        products added in cart.
+                    </div>
+                    <img src="content/projects/music1.png">
+
+                </div>
+
+                <div class="card" id="logos">
+                    <h1>Logo Designs</h1>
+                    <div class="desc">Here are some of my logo designs I made for a few companies</div>
+                    <img src="content/projects/logoDesign.png">
+                </div>
+
+                <div class="card" id="tictac">
+                    <h1>Tic-Tac-Toe Game</h1>
+                    <div class="desc">Online game developed using JavaScript</div>
+                    <img src="content/projects/tictactoe.png">
+                </div>
+
+                <div class="card" id="portweb">
+                    <h1>Portfolio Website</h1>
+                    <div class="desc">The actual website you are currently on</div>
+                    <img src="content/projects/portWeb.png">
+                </div>
             </div>
-
-            <div class="card" id="weather">
-                <h1>Weather Web Application</h1>
-                <div class="desc">Real time weather application, with a coverage of API calls for weather forecast. Used bootstrap for styling</div>
-                <img src="content/projects/weather.PNG">
+            <div id="animation">
             </div>
-
-            <div class="card" id="music">
-                <h1>Music E-Shop</h1>
-                <div class="desc">Django Web-App for making orders
-                    by clients. Each order has its Customer and Receipt, and all the
-                products added in cart.</div>
-                <img src="content/projects/music1.png">
-
-            </div>
-
-            <div class="card" id="logos">
-                <h1>Logo Designs</h1>
-                <div class="desc">Here are some of my logo designs I made for a few companies</div>
-                <img src="content/projects/logoDesign.png">
-            </div>
-
-            <div class="card" id="tictac">
-                <h1>Tic-Tac-Toe Game</h1>
-                <div class="desc">Online game developed using JavaScript</div>
-                <img src="content/projects/tictactoe.png">
-            </div>
-
-            <div class="card" id="portweb">
-                <h1>Portfolio Website</h1>
-                <div class="desc">The actual website you are currently on</div>
-                <img src="content/projects/portWeb.png">
-            </div>
-        </div>
-        <div id="animation">
-        </div>
-        <br>
+            <br>
         </div>
         <br>
         <div id="detailedCards">
@@ -106,25 +124,30 @@
                     about making online reservations for apartments,
                     and at the same time the owner views and manages
                     all the submitted reservations in real time if he
-                    has the admin privilege.</div>
+                    has the admin privilege.
+                </div>
                 <br>
                 <!--Image Carousel-->
 
                 <div class="carousel">
                     <div class="carousel-inner">
-                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
+                               hidden="" checked="checked">
                         <div class="carousel-item">
                             <img src="content/projects/avtokamp1.png">
                         </div>
-                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
+                               hidden="">
                         <div class="carousel-item">
                             <img src="content/projects/avtokamp2.png">
                         </div>
-                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
+                               hidden="">
                         <div class="carousel-item">
                             <img src="content/projects/avtokamp3.png">
                         </div>
-                        <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                        <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true"
+                               hidden="">
                         <div class="carousel-item">
                             <img src="content/projects/avtokamp4.png">
                         </div>
@@ -141,15 +164,20 @@
                 <!--Image Carousel-->
                 <br>
                 <div class="inner-desc">
-                    &#9656; ASP MVC based, while using C# for managing the database. For the frontend I used only HTML, CSS and JavaScript.<br><br>
-                    &#9656; This project is a solution for a company that needed online reservation system for customers.<br><br>
-                    &#9656; It has the capabilities of making, storing and manipulating with reservations made by the clients.
-                    There are several views on the Web-app: The home page - where are shown basic information about the Prespa Lake and the apartments,
+                    &#9656; ASP MVC based, while using C# for managing the database. For the frontend I used only HTML,
+                    CSS and JavaScript.<br><br>
+                    &#9656; This project is a solution for a company that needed online reservation system for
+                    customers.<br><br>
+                    &#9656; It has the capabilities of making, storing and manipulating with reservations made by the
+                    clients.
+                    There are several views on the Web-app: The home page - where are shown basic information about the
+                    Prespa Lake and the apartments,
                     Make a reservation, Show all reservations (only admin privileges), About us, and the Contact page.
                 </div>
                 <br>
                 <div class="innerLink">
-                    <a href="https://github.com/stojchevskiboris/AvtokampOteshevo_WebApp" target="_blank"><img src="content/linkIcon.png"><span>View source code - GitHub</span></a>
+                    <a href="https://github.com/stojchevskiboris/AvtokampOteshevo_WebApp" target="_blank"><img
+                            src="content/linkIcon.png"><span>View source code - GitHub</span></a>
                 </div>
                 <br><br><br>
                 <button class="prev buttonCSS">Previous</button>
@@ -165,12 +193,14 @@
                     &nbsp;&nbsp;A client side Weather Application<br>
                     &#9656; weatherapi.com for the forecast API Calls<br>
                     &#9656; worldnewsapi.com for the news on the site
-                </div><br>
+                </div>
+                <br>
                 <div class="innerLink">
                     <a href="https://weather-webapp-nqwi.onrender.com/" target="_blank"><img src="content/linkIcon.png"><span>Check the Weather :)</span></a><br><br><br>
                 </div>
                 <div class="innerLink">
-                    <a href="https://github.com/stojchevskiboris/WeatherApp" target="_blank"><img src="content/linkIcon.png"><span>GitHub repository</span></a><br><br><br>
+                    <a href="https://github.com/stojchevskiboris/WeatherApp" target="_blank"><img
+                            src="content/linkIcon.png"><span>GitHub repository</span></a><br><br><br>
                 </div>
                 <div id="weatherImages">
                     <img src="content/projects/weather.PNG"><br><br>
@@ -185,35 +215,67 @@
             </div>
 
 
+            <div id="projectVuetube">
+                <h1>VueTube - Alternative YouTube Frontend</h1>
+                <div class="inner-desc">
+                    &nbsp;&nbsp;Alternative frontend for youtube using vannila JavaScript<br>
+                    &#9656; YouTube Data API v3 for YT data<br>
+                    &#9656; PouchDb for user cache
+                </div>
+                <br>
+                <div class="innerLink">
+                    <a href="https://vuetube-t7xj.onrender.com/" target="_blank"><img src="content/linkIcon.png"><span>Try the new YouTube :)</span></a><br><br><br>
+                </div>
+                <div class="innerLink">
+                    <a href="https://github.com/stojchevskiboris/AWD-Test" target="_blank"><img
+                            src="content/linkIcon.png"><span>GitHub repository</span></a><br><br><br>
+                </div>
+                <div id="vuetubeImages">
+                    <img class="img1" src="content/projects/vuetube1.png"><br><br>
+                    <img class="img1" src="content/projects/vuetube2.png"><br><br>
+                    <img class="img1" src="content/projects/vuetube3.png"><br><br>
+                    <img class="img1" src="content/projects/vuetube4.png">
+
+                </div>
+
+                <button class="prev buttonCSS">Previous</button>
+                <button class="top buttonCSS">All projects</button>
+                <button class="next buttonCSS">Next</button>
+            </div>
+
+
             <div id="projectMusic">
                 <h1>Music E-Shop</h1>
                 <div class="innerLink">
-                    <a href="https://musicshop.pythonanywhere.com/" target="_blank"><img src="content/linkIcon.png"><span>Visit Web-Application</span></a><br>
+                    <a href="https://musicshop.pythonanywhere.com/" target="_blank"><img
+                            src="content/linkIcon.png"><span>Visit Web-Application</span></a><br>
                 </div>
                 <br>
                 <div class="inner-desc">&nbsp;&nbsp;Django Web Application, .</div>
                 <br>
                 <!--Image Carousel-->
 
-                            <img class="img1" src="content/projects/music1.png">
+                <img class="img1" src="content/projects/music1.png">
 
-                            <img class="img1" src="content/projects/music2.png">
+                <img class="img1" src="content/projects/music2.png">
 
-                            <img class="img1" src="content/projects/music3.png">
+                <img class="img1" src="content/projects/music3.png">
 
-                            <img class="img1" src="content/projects/music4.png">
+                <img class="img1" src="content/projects/music4.png">
 
                 <br>
                 <div class="inner-desc">
                     &#9656; Python 3.10 based, using SQLite the database.<br><br>
-                    &#9656; This project is a solution for a company that needed online shop system for customers.<br><br>
+                    &#9656; This project is a solution for a company that needed online shop system for
+                    customers.<br><br>
                     &#9656; It has the capabilities of making, storing and manipulating with orders made by the clients.
                     There are several views on the Web-app: The home page,
                     Categories, About us, and the Contact page.
                 </div>
                 <br>
                 <div class="innerLink">
-                    <a href="https://github.com/stojchevskiboris/Music-Eshop" target="_blank"><img src="content/linkIcon.png"><span>View source code - GitHub</span></a>
+                    <a href="https://github.com/stojchevskiboris/Music-Eshop" target="_blank"><img
+                            src="content/linkIcon.png"><span>View source code - GitHub</span></a>
                 </div>
                 <br><br><br>
                 <button class="prev buttonCSS">Previous</button>
@@ -223,16 +285,17 @@
             </div>
 
 
-
             <div id="projectLogoDesigns">
                 <h1>Logo Designs</h1>
                 <div class="inner-desc">
                     &nbsp;&nbsp;Various designs of logos for websites or billboards.<br>
                     &#9656; Mainly I use Adobe Photoshop, but for some vector images Canva has a variety of choises.<br>
                     &#9656; Here are a few of them I used in my projects or for commercial use:
-                </div><br>
+                </div>
+                <br>
                 <div class="innerLink">
-                    <a href="https://github.com/stojchevskiboris/LogoDesigns" target="_blank"><img src="content/linkIcon.png"><span>GitHub repository</span></a><br><br><br>
+                    <a href="https://github.com/stojchevskiboris/LogoDesigns" target="_blank"><img
+                            src="content/linkIcon.png"><span>GitHub repository</span></a><br><br><br>
                 </div>
                 <div id="logoImages">
                     <img src="content/projects/logo1.png">
@@ -253,13 +316,17 @@
                 <div class="inner-desc">
                     &nbsp;&nbsp;An online classic game developed only by using JavaScript<br>
 
-                </div><br>
+                </div>
+                <br>
                 <div class="innerLink">
-                    <a href="https://tictactoe-6jtf.onrender.com/" target="_blank"><img src="content/linkIcon.png"><span>Play the game</span></a><br><br><br>
+                    <a href="https://tictactoe-6jtf.onrender.com/" target="_blank"><img
+                            src="content/linkIcon.png"><span>Play the game</span></a><br><br><br>
                 </div>
                 <div class="innerLink">
-                    <a href="https://github.com/stojchevskiboris/TicTacToe_Game" target="_blank"><img src="content/linkIcon.png"><span>View source code - GitHub</span></a>
-                </div><br>
+                    <a href="https://github.com/stojchevskiboris/TicTacToe_Game" target="_blank"><img
+                            src="content/linkIcon.png"><span>View source code - GitHub</span></a>
+                </div>
+                <br>
                 <img id="tttimg" src="content/projects/tictactoe.png">
                 <br><br>
                 <button class="prev buttonCSS">Previous</button>
@@ -269,14 +336,17 @@
             <div id="projectPortWeb">
                 <h1>Portfolio Website</h1>
                 <div class="inner-desc">
-                    &nbsp;&nbsp;Pretty much everything I learned from the courses of Web-Design and Design of User Interface is put into one place here.<br>
+                    &nbsp;&nbsp;Pretty much everything I learned from the courses of Web-Design and Design of User
+                    Interface is put into one place here.<br>
                     Made easily accesible for desktop and mobile view.<br>
                     &#9656; HTML<br>
                     &#9656; CSS<br>
                     &#9656; JavaScript (jQuery Library)<br>
-                </div><br>
+                </div>
+                <br>
                 <div class="innerLink">
-                    <a href="https://github.com/stojchevskiboris/PersonalWebsite" target="_blank"><img src="content/linkIcon.png"><span>GitHub repository</span></a><br><br><br>
+                    <a href="https://github.com/stojchevskiboris/PersonalWebsite" target="_blank"><img
+                            src="content/linkIcon.png"><span>GitHub repository</span></a><br><br><br>
                 </div>
                 <button class="prev buttonCSS">Previous</button>
                 <button class="top buttonCSS">All projects</button>

@@ -53,7 +53,7 @@
 .card:hover{
     cursor: pointer;
 }
-#projectAvtokamp, #projectWeather, #projectMusic,  #projectLogoDesigns, #tictactoe, #projectPortWeb{
+#projectAvtokamp, #projectWeather, #projectVuetube, #projectMusic,  #projectLogoDesigns, #tictactoe, #projectPortWeb{
     display: none;
 }
 .buttonCSS{
@@ -119,6 +119,10 @@
 }
 
 #weatherImages img{
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+}
+#vuetubeImages img{
     border: 5px solid darkgreen;
     border-radius: 10px;
 }
