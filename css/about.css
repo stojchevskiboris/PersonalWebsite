@@ -21,6 +21,10 @@
     height: auto;
 }
 
+.tdn{
+    color: inherit;
+}
+
 .ui-widget-header{
     background: linear-gradient(360deg, #494747, #61f77b);
 }
