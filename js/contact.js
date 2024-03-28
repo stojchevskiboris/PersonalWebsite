@@ -7,6 +7,7 @@ document.getElementById('form')
         if(emailfield.value==""){
             emailfield.setAttribute('class','warning');
             document.getElementById("warn").style.display = "inline-block"
+            toastr.info("Please provide the required fields.")
             return;
         }
 
@@ -19,7 +20,7 @@ document.getElementById('form')
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 btn.value = 'Send Email';
-                alert('Email sent!');
+                toastr.success('Email sent!')
                 document.getElementById("from_name").value="";
                 document.getElementById("reply_to").value="";
                 document.getElementById("message").value="";
