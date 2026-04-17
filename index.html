@@ -1,147 +1,227 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Boris Stojchevski</title>
-    <link rel="icon" type="image" href="/content/b_2.png">
-    <link rel="stylesheet" href="lib/jquery/jquery-ui.css">
-    <script src="lib/jquery/jquery.js"></script>
-    <script src="lib/jquery/jquery-ui.js"></script>
-    <script src="js/index.js"></script>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boris Stojchevski — Software Developer</title>
+  <link rel="icon" type="image/png" href="content/b_2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="container">
 
-<div class="header">
-    <span title="Home page" id="home"><img src="content/b_white.png"></span>
+<!-- Navigation -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Boris<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-social">
+    <a href="https://github.com/stojchevskiboris" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/boris-stojchevski/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/stojcevski.b/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-    <ul id="topLinks">
-        <li id="projects"><a title="View my project" href="projects.html">Projects</a></li>
-        <li class="line">|</li>
-        <li id="about"><a title="Something about me" href="about.html">About</a></li>
-        <li class="line">|</li>
-        <li id="contact"><a title="Let`s connect" href="contact.html">Contact</a></li>
+<div class="page">
 
-    </ul>
-    <ul id="socialLinks">
-        <li id="linkedin"> <a href="https://www.linkedin.com/in/boris-stojchevski/" target=”_blank”> <img id="hoverlinkedin" title="Connect with me on LinkedIn" src="content/linkedin.png"> </a></li>
-        <li id="github"> <a href="https://github.com/stojchevskiboris" target=”_blank”> <img id="hovergithub" title="View project source codes on Github" src="content/github.png"></a> </li>
-        <li id="facebook"> <a href="https://www.facebook.com/boris.stojchevski.5/" target=”_blank”> <img id="hoverfacebook" title="Add me on Facebook" src="content/facebook.png"></a> </li>
-        <li id="instagram"> <a href="https://www.instagram.com/stojcevski.b/" target=”_blank”> <img id="hoverinstagram" title="Follow me on Instagram" src="content/instagram.png"> </a> </li>
-    </ul>
-</div>
-
-<div id="main">
-<br>
-    <p id="main1"></p>
-    <div id="m6">
-        <span id="skillsHeader">Skills:</span>
-        <table id="table1">
-            <tr>
-                <td><img class="listBullet" src="content/b1_grey.png"></td>
-                <td>Web Development (HTML, CSS, JS)</td>
-                <td><img src="content/html.png"> <img src="content/bootstrap.png"></td>
-            </tr>
-            <tr>
-                <td><img class="listBullet" src="content/b1_grey.png"></td>
-                <td>Spring Web-Apps (Java)</td>
-                <td><img src="content/spring.png"> <img src="content/java1.png"> </td>
-            </tr>
-            <tr>
-                <td><img class="listBullet" src="content/b1_grey.png"></td>
-                <td>.NET Web-Apps (C#) </td>
-                <td><img src="content/dotnetMVC.png"> <img src="content/cSharp.png"></td>
-            </tr>
-            <tr>
-                <td><img class="listBullet" src="content/b1_grey.png"></td>
-                <td>Web Frameworks (React, VueJS)</td>
-                <td> <img src="content/react.png"> <img src="content/vue.png"></td>
-            </tr>
-            <tr>
-                <td><img class="listBullet" src="content/b1_grey.png"></td>
-                <td>Django Apps (Django, Python)</td>
-                <td> <img src="content/django.png"> <img src="content/python.png"></td>
-            </tr>
-            <tr>
-                <td><img class="listBullet" src="content/b1_grey.png"></td>
-                <td>Databases (PostgreSQL & R)</td>
-                <td> <img src="content/psql.png"> <img src="content/r.png"></td>
-            </tr>
-            <tr>
-                <td><img class="listBullet" src="content/b1_grey.png"></td>
-                <td>Version Control (Git & Azure)</td>
-                <td> <img src="content/git.png"> <img src="content/azure.png"></td>
-            </tr>
-            <tr>
-                <td><img class="listBullet" src="content/b1_grey.png"></td>
-                <td>Adobe Lightroom & Photoshop</td>
-                <td> <img src="content/lr.png"> <img src="content/ps.png"></td>
-            </tr>
-            <tr>
-                <td><img class="listBullet" src="content/b1_grey.png"></td>
-                <td>C and C++ general purpose</td>
-                <td> <img src="content/c.png"> <img src="content/cpp.png"></td>
-            </tr>
-        </table>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-greeting">&gt; Hello, World!</span>
+      <h1 class="hero-name">I'm <span class="accent">Boris Stojchevski</span></h1>
+      <p class="hero-role">Software Developer</p>
+      <p class="hero-desc">
+        Building web applications with .NET, Java, Python and modern JS frameworks.
+        Currently working at <a href="https://nextsense.com/" target="_blank" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px">Nextsense</a>.
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+        <a href="contact.html" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+      </div>
     </div>
-
-    <div id="portfolio">
-        <button id="aboutButton" onclick="location.href = 'about.html'">Portfolio</button>
-        <button id="projectsButton" onclick="location.href = 'projects.html'">Projects</button>
-        <button id="contactButton" onclick="location.href = 'contact.html'">Contact me!</button>
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">boris@dev: ~</span>
+      </div>
+      <div class="terminal-body">
+        <span id="terminalText"></span><span class="terminal-cursor"></span>
+      </div>
     </div>
-<br><br><br><br>
-    <p id="main2">
-        “The best programs are written so that computing machines can perform them
-        quickly and so that human beings can understand them clearly. A programmer
-        is ideally an essayist who works with traditional aesthetic and literary
-        forms as well as mathematical concepts, to communicate the way that an
-        algorithm works and to convince a reader that the results will be correct.”
-        <br>
-        <span id="author"><a href="https://www.goodreads.com/author/quotes/64941.Donald_Ervin_Knuth" target=”_blank”> ― Donald E. Knuth, Selected Papers on Computer Science</a></span>
-    </p>
-    <br>
+  </section>
 
-
-    <div id="visitor">
-        <form id="form">
-            <div class="field">
-                <label for="from_name">from_name</label>
-                <input type="text" name="from_name" id="from_name">
-            </div>
-            <div class="field">
-                <label for="message">message</label>
-                <input type="text" name="message" id="message">
-            </div>
-            <div class="field">
-                <label for="reply_to">reply_to</label>
-                <input type="text" name="reply_to" id="reply_to">
-            </div>
-
-            <input type="submit" id="button" value="Send Email" >
-        </form>
-
-        <script type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-        <script type="text/javascript">
-            emailjs.init('LJG3WQMx5wIyI9UDM')
-        </script>
+  <!-- Skills -->
+  <section class="skills-section">
+    <div class="fade-in">
+      <span class="section-tag">// what I work with</span>
+      <h2 class="section-title">Skills &amp; <span>Technologies</span></h2>
+      <p class="section-desc">A broad stack across backend, frontend and tooling — always learning something new.</p>
     </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-in delay-1">
+        <div class="skill-icon"><i class="fas fa-globe"></i></div>
+        <div class="skill-info">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, Bootstrap</p>
+        </div>
+      </div>
+      <div class="skill-card fade-in delay-1">
+        <div class="skill-icon"><i class="fab fa-java"></i></div>
+        <div class="skill-info">
+          <h3>Spring Web Apps</h3>
+          <p>Java, Spring Boot, Spring MVC</p>
+        </div>
+      </div>
+      <div class="skill-card fade-in delay-2">
+        <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+        <div class="skill-info">
+          <h3>.NET Web Apps</h3>
+          <p>ASP.NET Core, C#, MVC</p>
+        </div>
+      </div>
+      <div class="skill-card fade-in delay-2">
+        <div class="skill-icon"><i class="fab fa-react"></i></div>
+        <div class="skill-info">
+          <h3>Frontend Frameworks</h3>
+          <p>React, Vue.js</p>
+        </div>
+      </div>
+      <div class="skill-card fade-in delay-3">
+        <div class="skill-icon"><i class="fab fa-python"></i></div>
+        <div class="skill-info">
+          <h3>Django Apps</h3>
+          <p>Django, Python</p>
+        </div>
+      </div>
+      <div class="skill-card fade-in delay-3">
+        <div class="skill-icon"><i class="fas fa-database"></i></div>
+        <div class="skill-info">
+          <h3>Databases</h3>
+          <p>PostgreSQL, SQLite, R</p>
+        </div>
+      </div>
+      <div class="skill-card fade-in delay-1">
+        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+        <div class="skill-info">
+          <h3>Version Control</h3>
+          <p>Git, Azure DevOps</p>
+        </div>
+      </div>
+      <div class="skill-card fade-in delay-2">
+        <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+        <div class="skill-info">
+          <h3>Adobe Creative</h3>
+          <p>Lightroom, Photoshop</p>
+        </div>
+      </div>
+      <div class="skill-card fade-in delay-3">
+        <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+        <div class="skill-info">
+          <h3>Systems Programming</h3>
+          <p>C, C++</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote-section">
+    <div class="quote-block fade-in">
+      <p class="quote-text">
+        "The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly.
+        A programmer is ideally an essayist who works with traditional aesthetic and literary forms as well as mathematical concepts,
+        to communicate the way that an algorithm works and to convince a reader that the results will be correct."
+      </p>
+      <p class="quote-author">
+        — <a href="https://www.goodreads.com/author/quotes/64941.Donald_Ervin_Knuth" target="_blank">Donald E. Knuth, Selected Papers on Computer Science</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="fade-in">
+      <span class="section-tag">// let's connect</span>
+      <h2 class="section-title">Want to work <span>together?</span></h2>
+      <p class="section-desc">I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+      <div class="cta-buttons">
+        <a href="projects.html" class="btn btn-outline"><i class="fas fa-folder-open"></i> See My Work</a>
+        <a href="about.html" class="btn btn-outline"><i class="fas fa-user"></i> About Me</a>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Get In Touch</a>
+      </div>
+    </div>
+  </section>
 
 </div>
 
+<footer>
+  <p>Designed &amp; Built by <strong>Boris Stojchevski</strong> &copy; <span class="year"></span></p>
+</footer>
 
+<script src="js/shared.js"></script>
+<script>
+  // Terminal typewriter
+  (function () {
+    var lines = [
+      '> Connecting...',
+      '> Connected.',
+      '',
+      '> whoami',
+      'Boris Stojchevski',
+      '',
+      '> cat about.txt',
+      'Software Developer @ Nextsense',
+      'BSc Computer Science — FINKI Skopje',
+      '',
+      '> skills --list',
+      '.NET  |  Java  |  Python  |  JS',
+      'React |  Vue   |  C#  |  SQL',
+      '',
+      '> status',
+      'Open to new opportunities ✓',
+    ];
+    var el = document.getElementById('terminalText');
+    if (!el) return;
 
+    var lineIdx = 0, charIdx = 0;
 
+    function getOutput() {
+      var out = '';
+      for (var i = 0; i < lineIdx; i++) {
+        out += lines[i] + '\n';
+      }
+      out += lines[lineIdx].slice(0, charIdx);
+      return out;
+    }
 
+    function type() {
+      if (lineIdx >= lines.length) return;
+      var line = lines[lineIdx];
+      if (charIdx <= line.length) {
+        el.textContent = getOutput();
+        charIdx++;
+        setTimeout(type, charIdx === 1 ? 60 : 38);
+      } else {
+        charIdx = 0;
+        lineIdx++;
+        setTimeout(type, lineIdx < lines.length && lines[lineIdx - 1] === '' ? 30 : 260);
+      }
+    }
 
-<div class="footer">
-    Copyright &copy; <span id="timeNow"></span> Boris Stojchevski
-</div>
-
-</div>
+    setTimeout(type, 600);
+  })();
+</script>
 </body>
 </html>
