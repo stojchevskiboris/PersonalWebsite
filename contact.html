@@ -1,116 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Boris Stojchevski - Contact</title>
-    <link rel="icon" type="image" href="/content/b_2.png">
-    <link rel="stylesheet" href="lib/jquery/jquery-ui.css">
-    <script src="lib/jquery/jquery.js"></script>
-    <script src="lib/jquery/jquery-ui.js"></script>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.css" integrity="sha512-oe8OpYjBaDWPt2VmSFR+qYOdnTjeV9QPLJUeqZyprDEQvQLJ9C5PCFclxwNuvb/GQgQngdCXzKSFltuHD3eCxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boris Stojchevski — Contact</title>
+  <link rel="icon" type="image/png" href="content/b_2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div id="container">
+<!-- Navigation -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Boris<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-social">
+    <a href="https://github.com/stojchevskiboris" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/boris-stojchevski/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/stojcevski.b/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
+<div class="page contact-page">
 
-    <div class="header">
-        <span title="Home page" id="home"><a href="index.html">  <img id="hoverhome" src="content/b.png"></a></span>
+  <div class="fade-in" style="margin-bottom:3rem">
+    <span class="section-tag">// get in touch</span>
+    <h1 class="section-title">Contact <span>Me</span></h1>
+    <div class="section-divider"></div>
+    <p class="section-desc">Have a question, a project idea, or just want to say hi? Fill in the form or reach out directly.</p>
+  </div>
 
-        <ul id="topLinks">
-            <li id="projects"><a title="View my project" href="projects.html">Projects</a></li>
-            <li class="line">|</li>
-            <li id="about"><a title="Something about me" href="about.html">About</a></li>
-            <li class="line">|</li>
-            <li title="Let`s connect"  id="contact">Contact</li>
+  <div class="contact-layout">
 
-        </ul>
-        <ul id="socialLinks">
-            <li id="linkedin"> <a href="https://www.linkedin.com/in/boris-stojchevski/" target=”_blank”> <img id="hoverlinkedin" title="Connect with me on LinkedIn" src="content/linkedin.png"> </a></li>
-            <li id="github"> <a href="https://github.com/stojchevskiboris" target=”_blank”> <img id="hovergithub" title="View project source codes on Github" src="content/github.png"></a> </li>
-            <li id="facebook"> <a href="https://www.facebook.com/boris.stojchevski.5/" target=”_blank”> <img id="hoverfacebook" title="Add me on Facebook" src="content/facebook.png"></a> </li>
-            <li id="instagram"> <a href="https://www.instagram.com/stojcevski.b/" target=”_blank”> <img id="hoverinstagram" title="Follow me on Instagram" src="content/instagram.png"> </a> </li>
-        </ul>
+    <!-- Form -->
+    <div class="contact-form-card fade-in">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="from_name">Your Email <span class="req">*</span></label>
+          <input type="email" id="from_name" name="from_name" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="reply_to">Subject</label>
+          <input type="text" id="reply_to" name="reply_to" placeholder="What's this about?">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
     </div>
 
-    <div id="main">
-        <br>
-        <div id="contactFormContainer">
+    <!-- Info -->
+    <div class="contact-info-col fade-in delay-1">
+      <h3>Let's Connect</h3>
+      <p class="sub">I'm based in Resen, Macedonia — always open to interesting opportunities.</p>
 
-
-        <div id="contactForm">
-        <form id="form">
-            <p id="cMe">CONTACT ME</p>
-            <h3 id="c1">Let`s get in touch</h3>
-            <div class="field" id="emailField">
-                <label id="labelEmail" for="from_name">Email<span id="warn">*</span></label>
-                <input required="required" type="email" name="from_name" id="from_name" oninput="removeAttr()">
-            </div>
-            <div class="field" id="subjectField">
-                <label for="reply_to">Subject</label>
-                <input required="required"  type="text" autocomplete="false" name="reply_to" id="reply_to">
-            </div>
-            <div class="field" id="messageField">
-                <label for="message">Message</label>
-                <textarea required="required" name="message" id="message"></textarea>
-                <!--        <input type="text" name="message" id="message">-->
-            </div>
-            <input type="submit" id="button" value="Send Email" >
-        </form>
+      <div class="contact-item">
+        <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="ci-text">
+          <label>Location</label>
+          <span>Resen, North Macedonia</span>
         </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="ci-icon"><i class="fas fa-phone"></i></div>
+        <div class="ci-text">
+          <label>Phone</label>
+          <a href="tel:+38975855147">+389 75 855 147</a>
         </div>
-        <br><br>
-        <div id="details">
-            <p class="headline">
-                <img src="content/location.png">
+      </div>
 
-                Location
-            </p>
-            <p class="infoline">Resen, Macedonia</p>
-
-            <p class="headline">
-                <img src="content/phone.png">
-                Phone
-            </p>
-            <p class="infoline"><a id="phone" href="tel:+38975855147">+389 75 855 147</a></p>
-
-            <p class="headline">
-                <img src="content/email.png">
-
-                Email
-            </p>
-            <p class="infoline"><a id="mail"  href="mailto:stojcevskib.02@gmail.com">stojcevskib.02@gmail.com</a></p>
+      <div class="contact-item">
+        <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+        <div class="ci-text">
+          <label>Email</label>
+          <a href="mailto:stojcevskib.02@gmail.com">stojcevskib.02@gmail.com</a>
         </div>
-        <div id="mapLocation">
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe width="660" height="340" id="gmap_canvas" src="https://maps.google.com/maps?q=resen&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    <a href="https://fmovies-online.net"></a>
-                    <br>
-                    <style>.mapouter{position:relative;text-align:right;height:340px;width:660px;}</style>
-                    <a href="https://www.embedgooglemap.net">embed google map location</a>
-                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:340px;width:660px;}</style>
-                </div>
-            </div>
-        </div>
+      </div>
 
-    </div>
-    <div class="footer">
-        Copyright &copy; <span id="timeNow"></span> Boris Stojchevski
+      <div class="social-links-row">
+        <a href="https://github.com/stojchevskiboris" target="_blank" class="social-link-btn">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/boris-stojchevski/" target="_blank" class="social-link-btn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.facebook.com/boris.stojchevski.5/" target="_blank" class="social-link-btn">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/stojcevski.b/" target="_blank" class="social-link-btn">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
     </div>
 
+  </div>
 </div>
 
+<footer>
+  <p>Designed &amp; Built by <strong>Boris Stojchevski</strong> &copy; <span class="year"></span></p>
+</footer>
 
-
-
-
-<script src="js/contact.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript"> emailjs.init('MJSzRaKfJ6LtmtssQ') </script>
+<script type="text/javascript">
+  emailjs.init('MJSzRaKfJ6LtmtssQ');
+</script>
+<script src="js/shared.js"></script>
+<script src="js/contact.js"></script>
 </body>
 </html>

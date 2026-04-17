@@ -1,77 +1,43 @@
-const btn = document.getElementById('button');
+(function () {
+  'use strict';
 
-document.getElementById('form')
-    .addEventListener('submit', function(event) {
-        event.preventDefault();
-        var emailfield = document.getElementById("from_name");
-        if(emailfield.value==""){
-            emailfield.setAttribute('class','warning');
-            document.getElementById("warn").style.display = "inline-block"
-            toastr.info("Please provide the required fields.")
-            return;
-        }
+  var EMAILJS_SERVICE_ID  = 'default_service';
+  var EMAILJS_TEMPLATE_ID = 'template_jerv0j5';
 
-        btn.value = 'Sending...';
+  var form = document.getElementById('contactForm');
+  var submitBtn = document.getElementById('submitBtn');
 
-        const serviceID = 'default_service';
-        const templateID = 'template_jerv0j5';
+  if (!form) return;
 
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-                btn.value = 'Send Email';
-                toastr.success('Email sent!')
-                document.getElementById("from_name").value="";
-                document.getElementById("reply_to").value="";
-                document.getElementById("message").value="";
-            }, (err) => {
-                btn.value = 'Send Email';
-                alert(JSON.stringify(err));
-            });
-        emailfield.removeAttribute("class");
-    });
+    var emailField = document.getElementById('from_name');
+    if (!emailField.value.trim()) {
+      emailField.classList.add('error');
+      showToast('Please provide your email address.', true);
+      return;
+    }
+    emailField.classList.remove('error');
 
-function removeAttr(){
-    var field = document.getElementById("from_name");
-    field.removeAttribute("class");
-}
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+      .then(function () {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        showToast('Message sent successfully! I\'ll get back to you soon.');
+        form.reset();
+      }, function (err) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        showToast('Failed to send message. Please try again.', true);
+        console.error('EmailJS error:', err);
+      });
+  });
 
-var time = new Date().getTime();
-var date = new Date(time);
-$("#timeNow").html(date.getFullYear());
-
-$("#hoverlinkedin").on('mouseover', function() {
-    $("#hoverlinkedin").attr('src','../content/linkedin_hover.png')
-});
-$("#hoverlinkedin").on('mouseout', function() {
-    $("#hoverlinkedin").attr('src','../content/linkedin.png')
-});
-
-$("#hovergithub").on('mouseover', function() {
-    $("#hovergithub").attr('src','../content/github_hover.png')
-});
-$("#hovergithub").on('mouseout', function() {
-    $("#hovergithub").attr('src','../content/github.png')
-});
-
-$("#hoverfacebook").on('mouseover', function() {
-    $("#hoverfacebook").attr('src','../content/facebook_hover.png')
-});
-$("#hoverfacebook").on('mouseout', function() {
-    $("#hoverfacebook").attr('src','../content/facebook.png')
-});
-
-$("#hoverinstagram").on('mouseover', function() {
-    $("#hoverinstagram").attr('src','../content/instagram_hover.png')
-});
-$("#hoverinstagram").on('mouseout', function() {
-    $("#hoverinstagram").attr('src','../content/instagram.png')
-});
-
-$("#hoverhome").on('mouseover', function() {
-    $("#hoverhome").attr('src','../content/b_white.png')
-});
-$("#hoverhome").on('mouseout', function() {
-    $("#hoverhome").attr('src','../content/b.png')
-});
+  document.getElementById('from_name').addEventListener('input', function () {
+    this.classList.remove('error');
+  });
+})();
