@@ -78,7 +78,7 @@
   <div class="about-actions fade-in">
     <a href="projects.html" class="btn btn-outline"><i class="fas fa-code"></i> View Projects</a>
     <button class="btn btn-primary" onclick="openModal('modal-cv')"><i class="fas fa-file-alt"></i> View Resume</button>
-    <button class="btn btn-outline" id="certToggleBtn" onclick="toggleCerts()"><i class="fas fa-certificate"></i> Certificates</button>
+    <button class="btn btn-outline" id="certToggleBtn" onclick="toggleCerts()"><i class="fas fa-certificate"></i> <span id="certToggleLabel">Certificates</span></button>
   </div>
 
 </div>
@@ -208,13 +208,13 @@
 <script>
   function toggleCerts() {
     var container = document.getElementById('certsContainer');
-    var btn = document.getElementById('certToggleBtn');
+    var label = document.getElementById('certToggleLabel');
     if (container.classList.contains('open')) {
       container.classList.remove('open');
-      btn.innerHTML = '<i class="fas fa-certificate"></i> Certificates';
+      label.textContent = 'Certificates';
     } else {
       container.classList.add('open');
-      btn.innerHTML = '<i class="fas fa-certificate"></i> Hide Certificates';
+      label.textContent = 'Hide Certificates';
     }
   }
 </script>

@@ -55,14 +55,18 @@
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
   // ── Modal helper (used by projects page) ───────────
+  // Attach backdrop-click listeners once at startup, not on each open call
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeModal(overlay.id);
+    });
+  });
+
   window.openModal = function (id) {
     const overlay = document.getElementById(id);
     if (!overlay) return;
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
-    overlay.addEventListener('click', function handler(e) {
-      if (e.target === overlay) closeModal(id);
-    });
   };
 
   window.closeModal = function (id) {

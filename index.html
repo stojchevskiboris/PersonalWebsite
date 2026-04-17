@@ -195,6 +195,12 @@
     var el = document.getElementById('terminalText');
     if (!el) return;
 
+    var CHAR_DELAY_MS       = 38;   // delay between each character
+    var LINE_FIRST_CHAR_MS  = 60;   // slight pause before first char of a line
+    var EMPTY_LINE_DELAY_MS = 30;   // delay after an empty line
+    var LINE_END_DELAY_MS   = 260;  // pause after finishing a non-empty line
+    var START_DELAY_MS      = 600;  // initial delay before typing begins
+
     var lineIdx = 0, charIdx = 0;
 
     function getOutput() {
@@ -212,15 +218,16 @@
       if (charIdx <= line.length) {
         el.textContent = getOutput();
         charIdx++;
-        setTimeout(type, charIdx === 1 ? 60 : 38);
+        setTimeout(type, charIdx === 1 ? LINE_FIRST_CHAR_MS : CHAR_DELAY_MS);
       } else {
         charIdx = 0;
         lineIdx++;
-        setTimeout(type, lineIdx < lines.length && lines[lineIdx - 1] === '' ? 30 : 260);
+        var isBlank = lineIdx < lines.length && lines[lineIdx - 1] === '';
+        setTimeout(type, isBlank ? EMPTY_LINE_DELAY_MS : LINE_END_DELAY_MS);
       }
     }
 
-    setTimeout(type, 600);
+    setTimeout(type, START_DELAY_MS);
   })();
 </script>
 </body>

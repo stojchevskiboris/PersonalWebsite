@@ -1,6 +1,9 @@
 (function () {
   'use strict';
 
+  var EMAILJS_SERVICE_ID  = 'default_service';
+  var EMAILJS_TEMPLATE_ID = 'template_jerv0j5';
+
   var form = document.getElementById('contactForm');
   var submitBtn = document.getElementById('submitBtn');
 
@@ -20,7 +23,7 @@
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
-    emailjs.sendForm('default_service', 'template_jerv0j5', form)
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
       .then(function () {
         submitBtn.disabled = false;
         submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
