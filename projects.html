@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,343 +8,424 @@
   <link rel="icon" type="image/png" href="content/b_2.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- Navigation -->
-<nav class="nav">
-  <a href="index.html" class="nav-logo">Boris<span>.</span></a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="nav-social">
-    <a href="https://github.com/stojchevskiboris" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/boris-stojchevski/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/stojcevski.b/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-  </div>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Boris<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://github.com/stojchevskiboris" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/boris-stojchevski/" target="_blank" title="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/stojcevski.b/" target="_blank" title="Instagram"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<div class="page projects-page">
+  <div class="page projects-page">
 
-  <div class="projects-header fade-in">
-    <span class="section-tag">// my work</span>
-    <h1 class="section-title">Featured <span>Projects</span></h1>
-    <div class="section-divider"></div>
-    <p class="section-desc">A selection of projects I've built — click any card to see more details.</p>
-  </div>
+    <div class="projects-header fade-in">
+      <span class="section-tag">// my work</span>
+      <h1 class="section-title">Featured <span>Projects</span></h1>
+      <div class="section-divider"></div>
+      <p class="section-desc">A selection of projects I've built — click any card to see more details.</p>
+    </div>
 
-  <div class="projects-grid">
+    <div class="projects-grid">
 
-    <!-- Apartment Reservation -->
-    <div class="project-card fade-in delay-1" onclick="openModal('modal-avtokamp')">
-      <div class="project-thumb">
-        <img src="content/projects/avtokamp1.png" alt="Apartment Reservation App">
-        <div class="project-thumb-overlay"><span>View Details</span></div>
+      <!-- Alternativna Medicina -->
+      <div class="project-card fade-in delay-1" onclick="openModal('modal-altmed')">
+        <div class="project-thumb">
+          <img src="content/projects/alt-med-1.png" alt="Alternativna Medicina App">
+          <div class="project-thumb-overlay"><span>View Details</span></div>
+        </div>
+        <div class="project-body">
+          <h2>Alternativna Medicina E-Commerce</h2>
+          <p>A full-stack web application for alternative medicine content and product delivery, featuring a decoupled
+            three-tier architecture.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Node (Express)</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+        </div>
       </div>
-      <div class="project-body">
+
+      <!-- Apartment Reservation -->
+      <div class="project-card fade-in delay-1" onclick="openModal('modal-avtokamp')">
+        <div class="project-thumb">
+          <img src="content/projects/avtokamp1.png" alt="Apartment Reservation App">
+          <div class="project-thumb-overlay"><span>View Details</span></div>
+        </div>
+        <div class="project-body">
+          <h2>Apartment Reservation Web App</h2>
+          <p>A .NET MVC application for clients to make online reservations and for admins to manage them in real time.
+          </p>
+          <div class="project-tags">
+            <span class="tag">ASP.NET MVC</span>
+            <span class="tag">C#</span>
+            <span class="tag">HTML/CSS/JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather App -->
+      <div class="project-card fade-in delay-2" onclick="openModal('modal-weather')">
+        <div class="project-thumb">
+          <img src="content/projects/weather.PNG" alt="Weather App">
+          <div class="project-thumb-overlay"><span>View Details</span></div>
+        </div>
+        <div class="project-body">
+          <h2>Weather Web Application</h2>
+          <p>Real-time weather application with forecast API calls and live news. Built with vanilla JS and Bootstrap.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VueTube -->
+      <div class="project-card fade-in delay-3" onclick="openModal('modal-vuetube')">
+        <div class="project-thumb">
+          <img src="content/projects/vuetube1.png" alt="VueTube">
+          <div class="project-thumb-overlay"><span>View Details</span></div>
+        </div>
+        <div class="project-body">
+          <h2>VueTube — Alt YouTube Frontend</h2>
+          <p>An alternative YouTube frontend using the YouTube Data API v3 and PouchDB for local caching.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">YouTube API</span>
+            <span class="tag">PouchDB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Music E-Shop -->
+      <div class="project-card fade-in delay-1" onclick="openModal('modal-music')">
+        <div class="project-thumb">
+          <img src="content/projects/music1.png" alt="Music E-Shop">
+          <div class="project-thumb-overlay"><span>View Details</span></div>
+        </div>
+        <div class="project-body">
+          <h2>Music E-Shop</h2>
+          <p>A Django e-commerce application for ordering instruments. Full customer and admin order management.</p>
+          <div class="project-tags">
+            <span class="tag">Django</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQLite</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo Designs -->
+      <div class="project-card fade-in delay-2" onclick="openModal('modal-logos')">
+        <div class="project-thumb">
+          <img src="content/projects/logoDesign.png" alt="Logo Designs">
+          <div class="project-thumb-overlay"><span>View Details</span></div>
+        </div>
+        <div class="project-body">
+          <h2>Logo Designs</h2>
+          <p>Commercial logo designs created with Adobe Photoshop and Canva for various projects and companies.</p>
+          <div class="project-tags">
+            <span class="tag">Photoshop</span>
+            <span class="tag">Canva</span>
+            <span class="tag">Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tic-Tac-Toe -->
+      <div class="project-card fade-in delay-3" onclick="openModal('modal-tictactoe')">
+        <div class="project-thumb">
+          <img src="content/projects/tictactoe.png" alt="Tic-Tac-Toe">
+          <div class="project-thumb-overlay"><span>View Details</span></div>
+        </div>
+        <div class="project-body">
+          <h2>Tic-Tac-Toe Game</h2>
+          <p>A classic online Tic-Tac-Toe game built with pure JavaScript — play it live in the browser.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Game</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Website -->
+      <div class="project-card fade-in delay-1" onclick="openModal('modal-portfolio')">
+        <div class="project-thumb">
+          <img src="content/projects/portWeb.png" alt="Portfolio Website">
+          <div class="project-thumb-overlay"><span>View Details</span></div>
+        </div>
+        <div class="project-body">
+          <h2>Portfolio Website</h2>
+          <p>The website you're on right now! Redesigned with a modern dark theme using vanilla HTML, CSS, and JS.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Designed &amp; Built by <strong>Boris Stojchevski</strong> &copy; <span class="year"></span></p>
+  </footer>
+
+  <!-- ======== MODALS ======== -->
+
+  <!-- Alternativna Medicina Modal -->
+  <div class="modal-overlay" id="modal-altmed">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Alternativna Medicina E-Commerce</h2>
+        <button class="modal-close" onclick="closeModal('modal-altmed')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-images">
+          <img src="content/projects/alt-med-1.png" alt="Alternativna Medicina screenshot 1">
+          <img src="content/projects/alt-med-2.png" alt="Alternativna Medicina screenshot 2">
+          <img src="content/projects/alt-med-3.png" alt="Alternativna Medicina screenshot 3">
+          <img src="content/projects/alt-med-4.png" alt="Alternativna Medicina screenshot 4">
+        </div>
+        <div class="modal-desc">
+          <p>A full-stack web application built for alternative medicine content and product delivery, featuring a
+            decoupled three-tier architecture.</p>
+          <p>Powered by a TypeScript &amp; Express.js REST API with MongoDB/Mongoose on the backend, alongside separate
+            Next.js 16 applications for both the admin management panel and public website.</p>
+          <p>Features: secure JWT and API-key authorization, TipTap rich-text blog management, automated file logging
+            with Winston, product catalog management, and a responsive Radix/Tailwind UI.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://alternativna-medicina-dev.vercel.app/" target="_blank" class="modal-link">
+            <i class="fab fa-github"></i>
+            Visit Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apartment Reservation Modal -->
+  <div class="modal-overlay" id="modal-avtokamp">
+    <div class="modal">
+      <div class="modal-header">
         <h2>Apartment Reservation Web App</h2>
-        <p>A .NET MVC application for clients to make online reservations and for admins to manage them in real time.</p>
-        <div class="project-tags">
-          <span class="tag">ASP.NET MVC</span>
-          <span class="tag">C#</span>
-          <span class="tag">HTML/CSS/JS</span>
+        <button class="modal-close" onclick="closeModal('modal-avtokamp')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-images">
+          <img src="content/projects/avtokamp1.png" alt="Apartment Reservation screenshot 1">
+          <img src="content/projects/avtokamp2.png" alt="Apartment Reservation screenshot 2">
+          <img src="content/projects/avtokamp3.png" alt="Apartment Reservation screenshot 3">
+          <img src="content/projects/avtokamp4.png" alt="Apartment Reservation screenshot 4">
+        </div>
+        <div class="modal-desc">
+          <p>A .NET Desktop Web-Application for clients to make online reservations for apartments, while the admin can
+            view and manage all submitted reservations in real time.</p>
+          <p>Built with ASP.NET MVC and C# for backend, with HTML, CSS and JavaScript for the frontend.</p>
+          <p>Features: home page with property info, reservation form, admin dashboard (view/manage all reservations),
+            and a contact page.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://avtokampotesevo.bsite.net/" target="_blank" class="modal-link"><i
+              class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/stojchevskiboris/AvtokampOteshevo_WebApp" target="_blank" class="modal-link"><i
+              class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Weather App -->
-    <div class="project-card fade-in delay-2" onclick="openModal('modal-weather')">
-      <div class="project-thumb">
-        <img src="content/projects/weather.PNG" alt="Weather App">
-        <div class="project-thumb-overlay"><span>View Details</span></div>
-      </div>
-      <div class="project-body">
+  <!-- Weather App Modal -->
+  <div class="modal-overlay" id="modal-weather">
+    <div class="modal">
+      <div class="modal-header">
         <h2>Weather Web Application</h2>
-        <p>Real-time weather application with forecast API calls and live news. Built with vanilla JS and Bootstrap.</p>
-        <div class="project-tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">REST API</span>
-          <span class="tag">Bootstrap</span>
+        <button class="modal-close" onclick="closeModal('modal-weather')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-images">
+          <img src="content/projects/weather.PNG" alt="Weather app screenshot 1">
+          <img src="content/projects/weather2.PNG" alt="Weather app screenshot 2">
+          <img src="content/projects/weather3.PNG" alt="Weather app screenshot 3">
+        </div>
+        <div class="modal-desc">
+          <p>A client-side weather application with live forecast data and news integration.</p>
+          <p>Uses weatherapi.com for forecast API calls and worldnewsapi.com for the embedded news section.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://weather-webapp-nqwi.onrender.com/" target="_blank" class="modal-link"><i
+              class="fas fa-cloud-sun"></i> Check the Weather</a>
+          <a href="https://github.com/stojchevskiboris/WeatherApp" target="_blank" class="modal-link"><i
+              class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- VueTube -->
-    <div class="project-card fade-in delay-3" onclick="openModal('modal-vuetube')">
-      <div class="project-thumb">
-        <img src="content/projects/vuetube1.png" alt="VueTube">
-        <div class="project-thumb-overlay"><span>View Details</span></div>
+  <!-- VueTube Modal -->
+  <div class="modal-overlay" id="modal-vuetube">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>VueTube — Alternative YouTube Frontend</h2>
+        <button class="modal-close" onclick="closeModal('modal-vuetube')">&times;</button>
       </div>
-      <div class="project-body">
-        <h2>VueTube — Alt YouTube Frontend</h2>
-        <p>An alternative YouTube frontend using the YouTube Data API v3 and PouchDB for local caching.</p>
-        <div class="project-tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">YouTube API</span>
-          <span class="tag">PouchDB</span>
+      <div class="modal-body">
+        <div class="modal-images">
+          <img src="content/projects/vuetube1.png" alt="VueTube screenshot 1">
+          <img src="content/projects/vuetube2.png" alt="VueTube screenshot 2">
+          <img src="content/projects/vuetube3.png" alt="VueTube screenshot 3">
+          <img src="content/projects/vuetube4.png" alt="VueTube screenshot 4">
+        </div>
+        <div class="modal-desc">
+          <p>An alternative frontend for YouTube built with vanilla JavaScript. Search videos, browse channels and watch
+            content with a clean interface.</p>
+          <p>Uses YouTube Data API v3 for fetching data and PouchDB for local user cache.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://vuetube-t7xj.onrender.com/" target="_blank" class="modal-link"><i class="fab fa-youtube"></i>
+            Try it Out</a>
+          <a href="https://github.com/stojchevskiboris/AWD-Test" target="_blank" class="modal-link"><i
+              class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Music E-Shop -->
-    <div class="project-card fade-in delay-1" onclick="openModal('modal-music')">
-      <div class="project-thumb">
-        <img src="content/projects/music1.png" alt="Music E-Shop">
-        <div class="project-thumb-overlay"><span>View Details</span></div>
-      </div>
-      <div class="project-body">
+  <!-- Music E-Shop Modal -->
+  <div class="modal-overlay" id="modal-music">
+    <div class="modal">
+      <div class="modal-header">
         <h2>Music E-Shop</h2>
-        <p>A Django e-commerce application for ordering instruments. Full customer and admin order management.</p>
-        <div class="project-tags">
-          <span class="tag">Django</span>
-          <span class="tag">Python</span>
-          <span class="tag">SQLite</span>
+        <button class="modal-close" onclick="closeModal('modal-music')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-images">
+          <img src="content/projects/music1.png" alt="Music E-Shop screenshot 1">
+          <img src="content/projects/music2.png" alt="Music E-Shop screenshot 2">
+          <img src="content/projects/music3.png" alt="Music E-Shop screenshot 3">
+          <img src="content/projects/music4.png" alt="Music E-Shop screenshot 4">
+        </div>
+        <div class="modal-desc">
+          <p>A Django web application for an online music instruments shop. Customers can browse categories, add items
+            to cart, and place orders.</p>
+          <p>Built with Python 3.10 and Django, using SQLite as the database. Each order is linked to a customer and a
+            receipt.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://musicshop.pythonanywhere.com/" target="_blank" class="modal-link"><i
+              class="fas fa-music"></i> Live Demo</a>
+          <a href="https://github.com/stojchevskiboris/Music-Eshop" target="_blank" class="modal-link"><i
+              class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Logo Designs -->
-    <div class="project-card fade-in delay-2" onclick="openModal('modal-logos')">
-      <div class="project-thumb">
-        <img src="content/projects/logoDesign.png" alt="Logo Designs">
-        <div class="project-thumb-overlay"><span>View Details</span></div>
-      </div>
-      <div class="project-body">
+  <!-- Logo Designs Modal -->
+  <div class="modal-overlay" id="modal-logos">
+    <div class="modal">
+      <div class="modal-header">
         <h2>Logo Designs</h2>
-        <p>Commercial logo designs created with Adobe Photoshop and Canva for various projects and companies.</p>
-        <div class="project-tags">
-          <span class="tag">Photoshop</span>
-          <span class="tag">Canva</span>
-          <span class="tag">Design</span>
+        <button class="modal-close" onclick="closeModal('modal-logos')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-images">
+          <img src="content/projects/logo1.png" alt="Logo design 1">
+          <img src="content/projects/logo2.png" alt="Logo design 2">
+          <img src="content/projects/logo3.png" alt="Logo design 3">
+          <img src="content/projects/logo4.jpg" alt="Logo design 4">
+          <img src="content/projects/logo5.png" alt="Logo design 5">
+        </div>
+        <div class="modal-desc">
+          <p>Various logo designs created for websites and commercial use. Primarily using Adobe Photoshop for raster
+            designs and Canva for vector-based work.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/stojchevskiboris/LogoDesigns" target="_blank" class="modal-link"><i
+              class="fab fa-github"></i> GitHub Repository</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Tic-Tac-Toe -->
-    <div class="project-card fade-in delay-3" onclick="openModal('modal-tictactoe')">
-      <div class="project-thumb">
-        <img src="content/projects/tictactoe.png" alt="Tic-Tac-Toe">
-        <div class="project-thumb-overlay"><span>View Details</span></div>
-      </div>
-      <div class="project-body">
+  <!-- Tic-Tac-Toe Modal -->
+  <div class="modal-overlay" id="modal-tictactoe">
+    <div class="modal">
+      <div class="modal-header">
         <h2>Tic-Tac-Toe Game</h2>
-        <p>A classic online Tic-Tac-Toe game built with pure JavaScript — play it live in the browser.</p>
-        <div class="project-tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">HTML/CSS</span>
-          <span class="tag">Game</span>
+        <button class="modal-close" onclick="closeModal('modal-tictactoe')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-images">
+          <img src="content/projects/tictactoe.png" alt="Tic-Tac-Toe screenshot">
+        </div>
+        <div class="modal-desc">
+          <p>A classic Tic-Tac-Toe game built entirely with vanilla JavaScript — no frameworks, no libraries. Two
+            players take turns in the browser.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://tictactoe-6jtf.onrender.com/" target="_blank" class="modal-link"><i
+              class="fas fa-gamepad"></i> Play Now</a>
+          <a href="https://github.com/stojchevskiboris/TicTacToe_Game" target="_blank" class="modal-link"><i
+              class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Portfolio Website -->
-    <div class="project-card fade-in delay-1" onclick="openModal('modal-portfolio')">
-      <div class="project-thumb">
-        <img src="content/projects/portWeb.png" alt="Portfolio Website">
-        <div class="project-thumb-overlay"><span>View Details</span></div>
-      </div>
-      <div class="project-body">
+  <!-- Portfolio Modal -->
+  <div class="modal-overlay" id="modal-portfolio">
+    <div class="modal">
+      <div class="modal-header">
         <h2>Portfolio Website</h2>
-        <p>The website you're on right now! Redesigned with a modern dark theme using vanilla HTML, CSS, and JS.</p>
-        <div class="project-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
+        <button class="modal-close" onclick="closeModal('modal-portfolio')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-images">
+          <img src="content/projects/portWeb.png" alt="Portfolio website screenshot">
+        </div>
+        <div class="modal-desc">
+          <p>This very website! A redesigned personal portfolio built with semantic HTML, modern CSS (custom properties,
+            grid, flexbox) and vanilla JavaScript.</p>
+          <p>Features include a terminal animation hero, scroll-triggered fade-in animations, a project modal system,
+            responsive layout, and a working contact form via EmailJS.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/stojchevskiboris/PersonalWebsite" target="_blank" class="modal-link"><i
+              class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
     </div>
-
   </div>
-</div>
 
-<footer>
-  <p>Designed &amp; Built by <strong>Boris Stojchevski</strong> &copy; <span class="year"></span></p>
-</footer>
-
-<!-- ======== MODALS ======== -->
-
-<!-- Apartment Reservation Modal -->
-<div class="modal-overlay" id="modal-avtokamp">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>Apartment Reservation Web App</h2>
-      <button class="modal-close" onclick="closeModal('modal-avtokamp')">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-images">
-        <img src="content/projects/avtokamp1.png" alt="Apartment Reservation screenshot 1">
-        <img src="content/projects/avtokamp2.png" alt="Apartment Reservation screenshot 2">
-        <img src="content/projects/avtokamp3.png" alt="Apartment Reservation screenshot 3">
-        <img src="content/projects/avtokamp4.png" alt="Apartment Reservation screenshot 4">
-      </div>
-      <div class="modal-desc">
-        <p>A .NET Desktop Web-Application for clients to make online reservations for apartments, while the admin can view and manage all submitted reservations in real time.</p>
-        <p>Built with ASP.NET MVC and C# for backend, with HTML, CSS and JavaScript for the frontend.</p>
-        <p>Features: home page with property info, reservation form, admin dashboard (view/manage all reservations), and a contact page.</p>
-      </div>
-      <div class="modal-links">
-        <a href="https://avtokampotesevo.bsite.net/" target="_blank" class="modal-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        <a href="https://github.com/stojchevskiboris/AvtokampOteshevo_WebApp" target="_blank" class="modal-link"><i class="fab fa-github"></i> Source Code</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Weather App Modal -->
-<div class="modal-overlay" id="modal-weather">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>Weather Web Application</h2>
-      <button class="modal-close" onclick="closeModal('modal-weather')">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-images">
-        <img src="content/projects/weather.PNG" alt="Weather app screenshot 1">
-        <img src="content/projects/weather2.PNG" alt="Weather app screenshot 2">
-        <img src="content/projects/weather3.PNG" alt="Weather app screenshot 3">
-      </div>
-      <div class="modal-desc">
-        <p>A client-side weather application with live forecast data and news integration.</p>
-        <p>Uses weatherapi.com for forecast API calls and worldnewsapi.com for the embedded news section.</p>
-      </div>
-      <div class="modal-links">
-        <a href="https://weather-webapp-nqwi.onrender.com/" target="_blank" class="modal-link"><i class="fas fa-cloud-sun"></i> Check the Weather</a>
-        <a href="https://github.com/stojchevskiboris/WeatherApp" target="_blank" class="modal-link"><i class="fab fa-github"></i> Source Code</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- VueTube Modal -->
-<div class="modal-overlay" id="modal-vuetube">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>VueTube — Alternative YouTube Frontend</h2>
-      <button class="modal-close" onclick="closeModal('modal-vuetube')">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-images">
-        <img src="content/projects/vuetube1.png" alt="VueTube screenshot 1">
-        <img src="content/projects/vuetube2.png" alt="VueTube screenshot 2">
-        <img src="content/projects/vuetube3.png" alt="VueTube screenshot 3">
-        <img src="content/projects/vuetube4.png" alt="VueTube screenshot 4">
-      </div>
-      <div class="modal-desc">
-        <p>An alternative frontend for YouTube built with vanilla JavaScript. Search videos, browse channels and watch content with a clean interface.</p>
-        <p>Uses YouTube Data API v3 for fetching data and PouchDB for local user cache.</p>
-      </div>
-      <div class="modal-links">
-        <a href="https://vuetube-t7xj.onrender.com/" target="_blank" class="modal-link"><i class="fab fa-youtube"></i> Try it Out</a>
-        <a href="https://github.com/stojchevskiboris/AWD-Test" target="_blank" class="modal-link"><i class="fab fa-github"></i> Source Code</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Music E-Shop Modal -->
-<div class="modal-overlay" id="modal-music">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>Music E-Shop</h2>
-      <button class="modal-close" onclick="closeModal('modal-music')">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-images">
-        <img src="content/projects/music1.png" alt="Music E-Shop screenshot 1">
-        <img src="content/projects/music2.png" alt="Music E-Shop screenshot 2">
-        <img src="content/projects/music3.png" alt="Music E-Shop screenshot 3">
-        <img src="content/projects/music4.png" alt="Music E-Shop screenshot 4">
-      </div>
-      <div class="modal-desc">
-        <p>A Django web application for an online music instruments shop. Customers can browse categories, add items to cart, and place orders.</p>
-        <p>Built with Python 3.10 and Django, using SQLite as the database. Each order is linked to a customer and a receipt.</p>
-      </div>
-      <div class="modal-links">
-        <a href="https://musicshop.pythonanywhere.com/" target="_blank" class="modal-link"><i class="fas fa-music"></i> Live Demo</a>
-        <a href="https://github.com/stojchevskiboris/Music-Eshop" target="_blank" class="modal-link"><i class="fab fa-github"></i> Source Code</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Logo Designs Modal -->
-<div class="modal-overlay" id="modal-logos">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>Logo Designs</h2>
-      <button class="modal-close" onclick="closeModal('modal-logos')">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-images">
-        <img src="content/projects/logo1.png" alt="Logo design 1">
-        <img src="content/projects/logo2.png" alt="Logo design 2">
-        <img src="content/projects/logo3.png" alt="Logo design 3">
-        <img src="content/projects/logo4.jpg" alt="Logo design 4">
-        <img src="content/projects/logo5.png" alt="Logo design 5">
-      </div>
-      <div class="modal-desc">
-        <p>Various logo designs created for websites and commercial use. Primarily using Adobe Photoshop for raster designs and Canva for vector-based work.</p>
-      </div>
-      <div class="modal-links">
-        <a href="https://github.com/stojchevskiboris/LogoDesigns" target="_blank" class="modal-link"><i class="fab fa-github"></i> GitHub Repository</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Tic-Tac-Toe Modal -->
-<div class="modal-overlay" id="modal-tictactoe">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>Tic-Tac-Toe Game</h2>
-      <button class="modal-close" onclick="closeModal('modal-tictactoe')">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-images">
-        <img src="content/projects/tictactoe.png" alt="Tic-Tac-Toe screenshot">
-      </div>
-      <div class="modal-desc">
-        <p>A classic Tic-Tac-Toe game built entirely with vanilla JavaScript — no frameworks, no libraries. Two players take turns in the browser.</p>
-      </div>
-      <div class="modal-links">
-        <a href="https://tictactoe-6jtf.onrender.com/" target="_blank" class="modal-link"><i class="fas fa-gamepad"></i> Play Now</a>
-        <a href="https://github.com/stojchevskiboris/TicTacToe_Game" target="_blank" class="modal-link"><i class="fab fa-github"></i> Source Code</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Portfolio Modal -->
-<div class="modal-overlay" id="modal-portfolio">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>Portfolio Website</h2>
-      <button class="modal-close" onclick="closeModal('modal-portfolio')">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-images">
-        <img src="content/projects/portWeb.png" alt="Portfolio website screenshot">
-      </div>
-      <div class="modal-desc">
-        <p>This very website! A redesigned personal portfolio built with semantic HTML, modern CSS (custom properties, grid, flexbox) and vanilla JavaScript.</p>
-        <p>Features include a terminal animation hero, scroll-triggered fade-in animations, a project modal system, responsive layout, and a working contact form via EmailJS.</p>
-      </div>
-      <div class="modal-links">
-        <a href="https://github.com/stojchevskiboris/PersonalWebsite" target="_blank" class="modal-link"><i class="fab fa-github"></i> Source Code</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="js/shared.js"></script>
+  <script src="js/shared.js"></script>
 </body>
+
 </html>
