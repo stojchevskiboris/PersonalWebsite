@@ -1,234 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boris Stojchevski — Software Developer</title>
-  <link rel="icon" type="image/png" href="content/b_2.png">
+  <link rel="icon" type="image/x-icon" href="content/b_2.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- Navigation -->
-<nav class="nav">
-  <a href="index.html" class="nav-logo">Boris<span>.</span></a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="nav-social">
-    <a href="https://github.com/stojchevskiboris" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/boris-stojchevski/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/stojcevski.b/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Boris<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://github.com/stojchevskiboris" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/boris-stojchevski/" target="_blank" title="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/stojcevski.b/" target="_blank" title="Instagram"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-greeting">&gt; Hello, World!</span>
+        <h1 class="hero-name">I'm <span class="accent">Boris Stojchevski</span></h1>
+        <p class="hero-role">Software Developer</p>
+        <p class="hero-desc">
+          Building web applications with .NET, Java, Python and modern JS frameworks.
+          Currently working at <a href="https://nextsense.com/" target="_blank"
+            style="color:var(--accent);text-decoration:underline;text-underline-offset:3px">Nextsense</a>.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+          <a href="contact.html" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">boris@dev: ~</span>
+        </div>
+        <div class="terminal-body">
+          <span id="terminalText"></span><span class="terminal-cursor"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills-section">
+      <div class="fade-in">
+        <span class="section-tag">// what I work with</span>
+        <h2 class="section-title">Skills &amp; <span>Technologies</span></h2>
+        <p class="section-desc">A broad stack across backend, frontend and tooling — always learning something new.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card fade-in delay-1">
+          <div class="skill-icon"><i class="fas fa-globe"></i></div>
+          <div class="skill-info">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript, Bootstrap</p>
+          </div>
+        </div>
+        <div class="skill-card fade-in delay-1">
+          <div class="skill-icon"><i class="fab fa-java"></i></div>
+          <div class="skill-info">
+            <h3>Spring Web Apps</h3>
+            <p>Java, Spring Boot, Spring MVC</p>
+          </div>
+        </div>
+        <div class="skill-card fade-in delay-2">
+          <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+          <div class="skill-info">
+            <h3>.NET Web Apps</h3>
+            <p>ASP.NET Core, C#, MVC</p>
+          </div>
+        </div>
+        <div class="skill-card fade-in delay-2">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <div class="skill-info">
+            <h3>Frontend Frameworks</h3>
+            <p>React, Vue.js</p>
+          </div>
+        </div>
+        <div class="skill-card fade-in delay-3">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <div class="skill-info">
+            <h3>Django Apps</h3>
+            <p>Django, Python</p>
+          </div>
+        </div>
+        <div class="skill-card fade-in delay-3">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-info">
+            <h3>Databases</h3>
+            <p>PostgreSQL, SQLite, R</p>
+          </div>
+        </div>
+        <div class="skill-card fade-in delay-1">
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <div class="skill-info">
+            <h3>Version Control</h3>
+            <p>Git, Azure DevOps</p>
+          </div>
+        </div>
+        <div class="skill-card fade-in delay-2">
+          <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+          <div class="skill-info">
+            <h3>Adobe Creative</h3>
+            <p>Lightroom, Photoshop</p>
+          </div>
+        </div>
+        <div class="skill-card fade-in delay-3">
+          <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+          <div class="skill-info">
+            <h3>Systems Programming</h3>
+            <p>C, C++</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section">
+      <div class="quote-block fade-in">
+        <p class="quote-text">
+          "The best programs are written so that computing machines can perform them quickly and so that human beings
+          can understand them clearly.
+          A programmer is ideally an essayist who works with traditional aesthetic and literary forms as well as
+          mathematical concepts,
+          to communicate the way that an algorithm works and to convince a reader that the results will be correct."
+        </p>
+        <p class="quote-author">
+          — <a href="https://www.goodreads.com/author/quotes/64941.Donald_Ervin_Knuth" target="_blank">Donald E. Knuth,
+            Selected Papers on Computer Science</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="fade-in">
+        <span class="section-tag">// let's connect</span>
+        <h2 class="section-title">Want to work <span>together?</span></h2>
+        <div class="cta-buttons">
+          <a href="projects.html" class="btn btn-outline"><i class="fas fa-folder-open"></i> See My Work</a>
+          <a href="about.html" class="btn btn-outline"><i class="fas fa-user"></i> About Me</a>
+          <a href="contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
   </div>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
 
-<div class="page">
+  <footer>
+    <p>Designed &amp; Built by <strong>Boris Stojchevski</strong> &copy; <span class="year"></span></p>
+  </footer>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <span class="hero-greeting">&gt; Hello, World!</span>
-      <h1 class="hero-name">I'm <span class="accent">Boris Stojchevski</span></h1>
-      <p class="hero-role">Software Developer</p>
-      <p class="hero-desc">
-        Building web applications with .NET, Java, Python and modern JS frameworks.
-        Currently working at <a href="https://nextsense.com/" target="_blank" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px">Nextsense</a>.
-      </p>
-      <div class="hero-actions">
-        <a href="projects.html" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
-        <a href="contact.html" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
-      </div>
-    </div>
-    <div class="terminal">
-      <div class="terminal-header">
-        <span class="terminal-dot red"></span>
-        <span class="terminal-dot yellow"></span>
-        <span class="terminal-dot green"></span>
-        <span class="terminal-title">boris@dev: ~</span>
-      </div>
-      <div class="terminal-body">
-        <span id="terminalText"></span><span class="terminal-cursor"></span>
-      </div>
-    </div>
-  </section>
+  <script src="js/shared.js"></script>
+  <script>
+    // Terminal typewriter
+    (function () {
+      var lines = [
+        '> Connecting...',
+        '> Connected.',
+        '',
+        '> whoami',
+        'Boris Stojchevski',
+        '',
+        '> cat about.txt',
+        'Software Developer @ Nextsense',
+        'BSc Computer Science — FINKI Skopje',
+        '',
+        '> skills --list',
+        '.NET  |  Java  |  Python  |  JS',
+        'React |  Vue   |  C#  |  SQL',
+        '',
+        '> status',
+        'Open to new opportunities ✓',
+      ];
+      var el = document.getElementById('terminalText');
+      if (!el) return;
 
-  <!-- Skills -->
-  <section class="skills-section">
-    <div class="fade-in">
-      <span class="section-tag">// what I work with</span>
-      <h2 class="section-title">Skills &amp; <span>Technologies</span></h2>
-      <p class="section-desc">A broad stack across backend, frontend and tooling — always learning something new.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card fade-in delay-1">
-        <div class="skill-icon"><i class="fas fa-globe"></i></div>
-        <div class="skill-info">
-          <h3>Web Development</h3>
-          <p>HTML, CSS, JavaScript, Bootstrap</p>
-        </div>
-      </div>
-      <div class="skill-card fade-in delay-1">
-        <div class="skill-icon"><i class="fab fa-java"></i></div>
-        <div class="skill-info">
-          <h3>Spring Web Apps</h3>
-          <p>Java, Spring Boot, Spring MVC</p>
-        </div>
-      </div>
-      <div class="skill-card fade-in delay-2">
-        <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
-        <div class="skill-info">
-          <h3>.NET Web Apps</h3>
-          <p>ASP.NET Core, C#, MVC</p>
-        </div>
-      </div>
-      <div class="skill-card fade-in delay-2">
-        <div class="skill-icon"><i class="fab fa-react"></i></div>
-        <div class="skill-info">
-          <h3>Frontend Frameworks</h3>
-          <p>React, Vue.js</p>
-        </div>
-      </div>
-      <div class="skill-card fade-in delay-3">
-        <div class="skill-icon"><i class="fab fa-python"></i></div>
-        <div class="skill-info">
-          <h3>Django Apps</h3>
-          <p>Django, Python</p>
-        </div>
-      </div>
-      <div class="skill-card fade-in delay-3">
-        <div class="skill-icon"><i class="fas fa-database"></i></div>
-        <div class="skill-info">
-          <h3>Databases</h3>
-          <p>PostgreSQL, SQLite, R</p>
-        </div>
-      </div>
-      <div class="skill-card fade-in delay-1">
-        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-        <div class="skill-info">
-          <h3>Version Control</h3>
-          <p>Git, Azure DevOps</p>
-        </div>
-      </div>
-      <div class="skill-card fade-in delay-2">
-        <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
-        <div class="skill-info">
-          <h3>Adobe Creative</h3>
-          <p>Lightroom, Photoshop</p>
-        </div>
-      </div>
-      <div class="skill-card fade-in delay-3">
-        <div class="skill-icon"><i class="fas fa-microchip"></i></div>
-        <div class="skill-info">
-          <h3>Systems Programming</h3>
-          <p>C, C++</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      var CHAR_DELAY_MS = 38;   // delay between each character
+      var LINE_FIRST_CHAR_MS = 60;   // slight pause before first char of a line
+      var EMPTY_LINE_DELAY_MS = 30;   // delay after an empty line
+      var LINE_END_DELAY_MS = 260;  // pause after finishing a non-empty line
+      var START_DELAY_MS = 600;  // initial delay before typing begins
 
-  <!-- Quote -->
-  <section class="quote-section">
-    <div class="quote-block fade-in">
-      <p class="quote-text">
-        "The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly.
-        A programmer is ideally an essayist who works with traditional aesthetic and literary forms as well as mathematical concepts,
-        to communicate the way that an algorithm works and to convince a reader that the results will be correct."
-      </p>
-      <p class="quote-author">
-        — <a href="https://www.goodreads.com/author/quotes/64941.Donald_Ervin_Knuth" target="_blank">Donald E. Knuth, Selected Papers on Computer Science</a>
-      </p>
-    </div>
-  </section>
+      var lineIdx = 0, charIdx = 0;
 
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="fade-in">
-      <span class="section-tag">// let's connect</span>
-      <h2 class="section-title">Want to work <span>together?</span></h2>
-      <p class="section-desc">I'm open to new opportunities and collaborations. Feel free to reach out!</p>
-      <div class="cta-buttons">
-        <a href="projects.html" class="btn btn-outline"><i class="fas fa-folder-open"></i> See My Work</a>
-        <a href="about.html" class="btn btn-outline"><i class="fas fa-user"></i> About Me</a>
-        <a href="contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Get In Touch</a>
-      </div>
-    </div>
-  </section>
-
-</div>
-
-<footer>
-  <p>Designed &amp; Built by <strong>Boris Stojchevski</strong> &copy; <span class="year"></span></p>
-</footer>
-
-<script src="js/shared.js"></script>
-<script>
-  // Terminal typewriter
-  (function () {
-    var lines = [
-      '> Connecting...',
-      '> Connected.',
-      '',
-      '> whoami',
-      'Boris Stojchevski',
-      '',
-      '> cat about.txt',
-      'Software Developer @ Nextsense',
-      'BSc Computer Science — FINKI Skopje',
-      '',
-      '> skills --list',
-      '.NET  |  Java  |  Python  |  JS',
-      'React |  Vue   |  C#  |  SQL',
-      '',
-      '> status',
-      'Open to new opportunities ✓',
-    ];
-    var el = document.getElementById('terminalText');
-    if (!el) return;
-
-    var CHAR_DELAY_MS       = 38;   // delay between each character
-    var LINE_FIRST_CHAR_MS  = 60;   // slight pause before first char of a line
-    var EMPTY_LINE_DELAY_MS = 30;   // delay after an empty line
-    var LINE_END_DELAY_MS   = 260;  // pause after finishing a non-empty line
-    var START_DELAY_MS      = 600;  // initial delay before typing begins
-
-    var lineIdx = 0, charIdx = 0;
-
-    function getOutput() {
-      var out = '';
-      for (var i = 0; i < lineIdx; i++) {
-        out += lines[i] + '\n';
+      function getOutput() {
+        var out = '';
+        for (var i = 0; i < lineIdx; i++) {
+          out += lines[i] + '\n';
+        }
+        out += lines[lineIdx].slice(0, charIdx);
+        return out;
       }
-      out += lines[lineIdx].slice(0, charIdx);
-      return out;
-    }
 
-    function type() {
-      if (lineIdx >= lines.length) return;
-      var line = lines[lineIdx];
-      if (charIdx <= line.length) {
-        el.textContent = getOutput();
-        charIdx++;
-        setTimeout(type, charIdx === 1 ? LINE_FIRST_CHAR_MS : CHAR_DELAY_MS);
-      } else {
-        charIdx = 0;
-        lineIdx++;
-        var isBlank = lineIdx < lines.length && lines[lineIdx - 1] === '';
-        setTimeout(type, isBlank ? EMPTY_LINE_DELAY_MS : LINE_END_DELAY_MS);
+      function type() {
+        if (lineIdx >= lines.length) return;
+        var line = lines[lineIdx];
+        if (charIdx <= line.length) {
+          el.textContent = getOutput();
+          charIdx++;
+          setTimeout(type, charIdx === 1 ? LINE_FIRST_CHAR_MS : CHAR_DELAY_MS);
+        } else {
+          charIdx = 0;
+          lineIdx++;
+          var isBlank = lineIdx < lines.length && lines[lineIdx - 1] === '';
+          setTimeout(type, isBlank ? EMPTY_LINE_DELAY_MS : LINE_END_DELAY_MS);
+        }
       }
-    }
 
-    setTimeout(type, START_DELAY_MS);
-  })();
-</script>
+      setTimeout(type, START_DELAY_MS);
+    })();
+  </script>
 </body>
+
 </html>
